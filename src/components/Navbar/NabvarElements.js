@@ -4,12 +4,12 @@ import { Link as LinkScroll } from 'react-scroll';
 
 // ************ NAVBAR **************************
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
-
+    margin-top: -80px;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     font-size: 1rem;
     position: sticky;
     top: 0;
@@ -42,6 +42,10 @@ export const NavLogo = styled(LinkRouter)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+        color: #01bf71;
+    }
 `;
 
 // ************ Mobile Icons ***********************
@@ -89,8 +93,13 @@ export const NavLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
 
-    &.active {
+    &:active {
         border-bottom: 3px solid #01bf71;
+        color: #01bf71;
+    }
+
+    &:hover {
+        color: #01bf71;
     }
 `;
 

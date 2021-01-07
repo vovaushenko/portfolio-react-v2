@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import {
     FooterContainer,
@@ -17,6 +18,9 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
     return (
         <FooterContainer>
             <FooterWrap>
@@ -61,7 +65,9 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">Logo</SocialLogo>
+                        <SocialLogo to="/" onClick={toggleHome}>
+                            Logo
+                        </SocialLogo>
                         <WebsiteRight>
                             Vova Ushenko 🤝 {new Date().getFullYear()} All Rights Reserved
                         </WebsiteRight>

@@ -27,9 +27,8 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>Hi there! 👋</HeroH1>
                 <HeroP>
-                    Glad to meet you! I'm Vova, I'm a 31 years old front end developer. I have been
-                    working in this industry for more than 10 years and I still enjoy being part of
-                    it!
+                    Glad to meet you! I'm Vova, I'm a 31 years old full-stack web-developer. I enjoy
+                    working with React ⚛️ and Node JS ♨️
                 </HeroP>
 
                 <HeroBtnWrapper>
@@ -39,6 +38,11 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
                         primary={true}
                         dark={true}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
                     >
                         Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
