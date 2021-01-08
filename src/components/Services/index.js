@@ -1,7 +1,8 @@
 import React from 'react';
-import Icon1 from '../../images/svg-4.svg';
-import Icon2 from '../../images/svg-5.svg';
-import Icon3 from '../../images/svg-6.svg';
+import Icon1 from '../../images/skills/javascript.svg';
+import Icon2 from '../../images/skills/react.svg';
+import Icon3 from '../../images/skills/nodejs.svg';
+import Icon4 from '../../images/npm-original-wordmark.svg';
 import {
     ServicesCard,
     ServicesContainer,
@@ -19,6 +20,7 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
+
                     <ServicesH2>Project 1</ServicesH2>
                     <ServicesP>LinkedIn Clone</ServicesP>
                 </ServicesCard>
@@ -26,6 +28,31 @@ const Services = () => {
                     <ServicesIcon src={Icon2} />
                     <ServicesH2>Project 2</ServicesH2>
                     <ServicesP>Travel Company Website</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3} />
+                    <ServicesH2>Project 3</ServicesH2>
+                    <ServicesP>Google Search Clone</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3} />
+                    <ServicesH2>Project 3</ServicesH2>
+                    <ServicesP>Google Search Clone</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3} />
+                    <ServicesH2>Project 3</ServicesH2>
+                    <ServicesP>Google Search Clone</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3} />
+                    <ServicesH2>Project 3</ServicesH2>
+                    <ServicesP>Google Search Clone</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon4} />
+                    <ServicesH2>Project 3</ServicesH2>
+                    <ServicesP>Google Search Clone</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
