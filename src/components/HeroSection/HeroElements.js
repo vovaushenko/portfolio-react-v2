@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1000px;
+    height: 900px;
     position: relative;
     z-index: 1;
 
@@ -60,8 +60,8 @@ export const HeroContent = styled.div`
     align-items: center;
     /* glassmorphism */
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
-    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    backdrop-filter: blur(4px);
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
@@ -70,10 +70,10 @@ export const HeroContent = styled.div`
 // **********Hero H1******************
 
 export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 48px;
+    color: #01bf71;
+    font-size: 40px;
     text-align: center;
-
+    font-weight: 100;
     @media screen and (max-width: 768px) {
         font-size: 40px;
     }
