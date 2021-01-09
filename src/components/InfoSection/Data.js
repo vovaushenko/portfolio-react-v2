@@ -1,4 +1,4 @@
-import img1 from '../../images/svg-1.svg';
+import img1 from '../../images/project 1.png';
 import img2 from '../../images/svg-2.svg';
 import img3 from '../../images/svg-3.svg';
 
