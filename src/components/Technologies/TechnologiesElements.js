@@ -7,6 +7,8 @@ export const TechContainer = styled.div`
     flex-direction: column;
     color: #fff;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         padding: 40px 0;
@@ -18,13 +20,17 @@ export const TechContainer = styled.div`
 export const TechHeader = styled.h2`
     color: #01bf71;
     font-size: 20px;
-    line-height: 16px;
+    line-height: 30px;
     font-weight: 500;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 16px;
+    margin-top: 16px;
     padding: 20px;
+
+    @media screen and (max-width: 500px) {
+        font-size: 16px;
+    }
 `;
 
 //************Tech  Wrapper******************
@@ -33,15 +39,16 @@ export const TechWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 900px;
 `;
 
 //************TechWrapper******************
 
 export const TechSubHeader = styled.h4`
-    letter-spacing: 1.4px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
 `;
 
-//************Tech   Img******************
 
 //  *********** Tech Card *******************
 export const TechCard = styled.div`
@@ -65,4 +72,8 @@ export const TechIcon = styled.img`
     height: 70px;
     width: 70px;
     margin-bottom: 10px;
+
+    &:hover {
+        filter: brightness(130%);
+    }
 `;
