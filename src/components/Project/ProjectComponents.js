@@ -9,30 +9,38 @@ import { FiMonitor } from 'react-icons/fi';
 export const ProjectContainer = styled.div`
     display: flex;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+    max-width: 1280px;
+    max-height: 1100px;
+    margin: auto;
+    padding: 60px 0;
 
-    height: 560px;
-    width: 100%;
-
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
     justify-content: center;
+    align-items: center;
     background: #010606;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 // *************** LEFT COLUMN ******************
 export const ProjectLeftColumn = styled.div`
     display: flex;
     flex: 0.5;
-    max-width: 600px;
+
     background-color: #010606;
-    border: 1px solid red;
-    border-radius: 10px;
+
     justify-content: center;
     align-items: center;
 `;
 export const ProjectImage = styled.img`
-    width: 100%;
+    width: 90%;
     margin: 0 0 10px 0;
 `;
 
@@ -46,22 +54,44 @@ export const ProjectRigthColumn = styled.div`
     text-align: center;
     align-items: center;
 
-    max-width: 600px;
     background-color: #010606;
-    border: 1px solid red;
-    border-radius: 10px;
 `;
-export const ProjectHeader = styled.h2``;
-export const ProjectSubHeader = styled.h4``;
-export const ProjectIcons = styled.div``;
-export const ProjectIcon = styled.img`
-    height: 30px;
-    width: 30px;
+
+// *************** Typography ******************
+
+export const ProjectHeader = styled.h2`
+    color: #01bf71;
+    letter-spacing: 1.4px;
+    padding-top: 15px;
+    font-size: 30px;
+`;
+export const ProjectSubHeader = styled.p`
+    color: #fff;
+    padding: 15px;
+    letter-spacing: 1.3px;
 `;
 export const ProjectDescription = styled.p`
-    margin-top: 35px;
-    font-size: 18px;
-    line-height: 24px;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    max-width: 600px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 12px;
+    }
+`;
+// *************** Icons  Container ******************
+export const ProjectIcons = styled.div`
+    display: flex;
+    padding: 5px;
+    width: 40%;
+    justify-content: space-between;
 `;
 
 // *************** Link WRAPPER ******************
@@ -70,15 +100,39 @@ export const ProjectLinkWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 50%;
+
+    @media screen and (max-width: 480px) {
+        width: 75%;
+    }
 `;
 
 // *************** Links ******************
 export const ProjectGitHubLink = styled.a`
+    display: flex;
+    color: #000;
+    background-color: #01bf71;
+    border-radius: 50px;
     text-decoration: none;
+
+    padding: 5px;
+
+    &:hover {
+        background-color: #fff;
+    }
 `;
 export const ProjectLiveLink = styled.a`
+    display: flex;
+    
+    color: #000;
+    background-color: #01bf71;
+    border-radius: 50px;
     text-decoration: none;
+
+    padding: 5px;
+    &:hover {
+        background-color: #fff;
+    }
 `;
 
 // *************** ICONS ******************
@@ -86,36 +140,41 @@ export const ProjectLiveLink = styled.a`
 export const ReactIcon = styled(FaReact)`
     display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #01bf71;
 `;
 export const CssIcon = styled(FaCss3Alt)`
     display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #01bf71;
 `;
 export const FireBaseIcon = styled(SiFirebase)`
     display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #01bf71;
 `;
 export const JsIcon = styled(SiJavascript)`
     display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #01bf71;
 `;
 export const NodeIcon = styled(FaNodeJs)`
     display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #01bf71;
 `;
 // *************** ButtonIcon ******************
 export const ButtonGitIcon = styled(FaGithub)`
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 20px;
-    color: #fff;
+    color: #000;
 `;
 export const ButtonLiveIcon = styled(FiMonitor)`
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 20px;
-    color: #fff;
+    color: #000;
 `;

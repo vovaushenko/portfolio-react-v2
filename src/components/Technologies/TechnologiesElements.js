@@ -5,11 +5,13 @@ import styled from 'styled-components';
 export const TechContainer = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 1280px;
     color: #fff;
+    margin: auto;
+    padding: 50px 0;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
     justify-content: center;
     align-items: center;
-
     @media screen and (max-width: 768px) {
         padding: 40px 0;
     }
@@ -48,7 +50,6 @@ export const TechSubHeader = styled.h4`
     letter-spacing: 1.5px;
     font-weight: 500;
 `;
-
 
 //  *********** Tech Card *******************
 export const TechCard = styled.div`
