@@ -4,3 +4,11 @@
     box-sizing: border-box;
     font-family: 'Russo One', sans-serif;
 }
+
+body {
+    background: #010606;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}

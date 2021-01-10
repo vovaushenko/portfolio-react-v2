@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
+import { projectFour, projectOne, projectThree, projectTwo } from '../components/Project/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 
@@ -23,11 +24,14 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <Tech />
-            <Project />
-            <Services />
-            <InfoSection {...homeObjTwo} />
+            <Project {...projectOne} />
+            <Project {...projectTwo} />
+            <Project {...projectThree} />
+            <Project {...projectFour} />
+            {/* <Services /> */}
+            {/* <InfoSection {...homeObjTwo} />
             <InfoSection {...homeObjOne} />
-            <InfoSection {...homeObjThree} />
+            <InfoSection {...homeObjThree} /> */}
 
             <Footer />
         </>

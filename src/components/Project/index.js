@@ -1,7 +1,6 @@
 import React from 'react';
-import project1 from '../../images/project 1.png';
+
 import {
-    GitHubIcon,
     ReactIcon,
     CssIcon,
     FireBaseIcon,
@@ -22,43 +21,56 @@ import {
     ProjectLinkWrapper,
 } from './ProjectComponents';
 
-// https://www.lauracharvey.dev/#blog
+// https://www.lauracharvey.dev/
 
-const Project = () => {
+const Project = ({
+    reverse,
+    lightMode,
+    header,
+    subHeader,
+    description,
+    img,
+    isVisibleReact,
+    isVisibleCss,
+    isVisibleFireBase,
+    isVisibleJS,
+    isVisibleNode,
+    gitUrl,
+    liveUrl,
+}) => {
     return (
-        <ProjectContainer reverse={false}>
-            <ProjectLeftColumn>
-                <ProjectImage src={project1} />
-            </ProjectLeftColumn>
+        <>
+            <ProjectContainer reverse={reverse} lightMode={lightMode}>
+                <ProjectLeftColumn>
+                    <ProjectImage src={img} />
+                </ProjectLeftColumn>
 
-            <ProjectRigthColumn>
-                <ProjectHeader>Google Search Clone</ProjectHeader>
-                <ProjectSubHeader>Solo Project | One Week</ProjectSubHeader>
-                <ProjectIcons>
-                    <ReactIcon visible={true} />
-                    <CssIcon visible={true} />
-                    <FireBaseIcon visible={true} />
-                    <JsIcon visible={true} />
-                    <NodeIcon visible={true} />
-                </ProjectIcons>
-                <ProjectDescription>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora,
-                    ratione asperiores nihil nam illo vel dolores alias pariatur rerum?
-                </ProjectDescription>
+                <ProjectRigthColumn>
+                    <ProjectHeader lightMode={lightMode}>{header}</ProjectHeader>
+                    <ProjectSubHeader lightMode={lightMode}>{subHeader}</ProjectSubHeader>
+                    <ProjectIcons>
+                        <ReactIcon visible={isVisibleReact} lightMode={lightMode} />
+                        <CssIcon visible={isVisibleCss} lightMode={lightMode} />
+                        <FireBaseIcon visible={isVisibleFireBase} lightMode={lightMode} />
+                        <JsIcon visible={isVisibleJS} lightMode={lightMode} />
+                        <NodeIcon visible={isVisibleNode} lightMode={lightMode} />
+                    </ProjectIcons>
+                    <ProjectDescription lightMode={lightMode}>{description}</ProjectDescription>
 
-                <ProjectLinkWrapper>
-                    <ProjectGitHubLink href="https://google.com" target="_blank">
-                        <ButtonGitIcon />
-                        Git Hub
-                    </ProjectGitHubLink>
+                    <ProjectLinkWrapper>
+                        <ProjectGitHubLink lightMode={lightMode} href={gitUrl} target="_blank">
+                            <ButtonGitIcon lightMode={lightMode} />
+                            GitHub
+                        </ProjectGitHubLink>
 
-                    <ProjectLiveLink href="https://github.com/vovaushenko/CodeWars" target="_blank">
-                        <ButtonLiveIcon />
-                        Live Site
-                    </ProjectLiveLink>
-                </ProjectLinkWrapper>
-            </ProjectRigthColumn>
-        </ProjectContainer>
+                        <ProjectLiveLink lightMode={lightMode} href={liveUrl} target="_blank">
+                            <ButtonLiveIcon lightMode={lightMode} />
+                            LiveSite
+                        </ProjectLiveLink>
+                    </ProjectLinkWrapper>
+                </ProjectRigthColumn>
+            </ProjectContainer>
+        </>
     );
 };
 

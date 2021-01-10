@@ -9,7 +9,7 @@ export const TechContainer = styled.div`
     color: #fff;
     margin: auto;
     padding: 50px 0;
-    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 768px) {
@@ -20,7 +20,8 @@ export const TechContainer = styled.div`
 // *****************Tech Header*******************
 
 export const TechHeader = styled.h2`
-    color: #01bf71;
+    color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
