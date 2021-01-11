@@ -4,16 +4,17 @@ import { FaReact, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
 import { SiFirebase, SiJavascript } from 'react-icons/si';
 import { FiMonitor } from 'react-icons/fi';
 
-// // *************** CONTAINER ******************
+// *************** CONTAINER ******************
 
 export const ProjectContainer = styled.div`
     display: flex;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-    max-width: 2000px;
+    max-width: 1500px;
     max-height: 1100px;
     margin: auto;
     padding: 60px 0;
     align-items: center;
+    border-radius: 30px;
 
     background: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
 
