@@ -128,6 +128,7 @@ export const ProjectLiveLink = styled.a`
     text-decoration: none;
     margin: 10px;
     padding: 5px;
+
     &:hover {
         background-color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
     }
