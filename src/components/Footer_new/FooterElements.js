@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom';
 export const FooterContainer = styled.footer`
     background-color: #101522;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
+    align-items: center;
+    border-top: #fff 1px solid;
 `;
 
 // ************ Links Wrapper **************
@@ -20,8 +23,18 @@ export const SocialLinksWrapper = styled.div`
 
 export const SocialIconLink = styled.a`
     color: #fff;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 32px;
+    padding: 5px 30px;
+    &:hover {
+        color: #01bf71;
+        transition: all 0.5s ease-in-out;
+
+        transform: rotate(360deg);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10px 15px;
+    }
 `;
 
 // ************To Top Wrapper***********
@@ -31,10 +44,15 @@ export const ToTopWrapper = styled.div`
 
 export const ToTop = styled(Link)`
     color: #fff;
-    justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
+
+    &:hover {
+        color: #01bf71;
+        transform: translateY(-10px);
+        transition: all 0.6s ease-in-out;
+    }
 `;

@@ -5,18 +5,14 @@ import {
     SocialIconLink,
     SocialLinksWrapper,
     ToTop,
+    ToTopText,
     ToTopWrapper,
 } from './FooterElements';
 
-import {
-    FaFacebook,
-    FaInstagram,
-    FaLinkedin,
-    FaTwitter,
-    FaYoutube,
-} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
 
 import { AiOutlineToTop } from 'react-icons/ai';
+import { SiCodewars } from 'react-icons/si';
 
 const Footer_new = () => {
     const toggleHome = () => {
@@ -26,19 +22,19 @@ const Footer_new = () => {
         <FooterContainer>
             <SocialLinksWrapper>
                 <SocialIconLink
-                    href="//www.twitter.com/Vova79605562"
+                    href="https://github.com/vovaushenko"
                     target="_blank"
                 >
-                    <FaFacebook />
+                    <FaGithub />
                 </SocialIconLink>
                 <SocialIconLink
-                    href="//www.twitter.com/Vova79605562"
+                    href="https://www.codewars.com/users/RampCV"
                     target="_blank"
                 >
-                    <FaInstagram />
+                    <SiCodewars />
                 </SocialIconLink>
                 <SocialIconLink
-                    href="//www.twitter.com/Vova79605562"
+                    href="https://www.linkedin.com/in/volodymyr-ushenko-5087a87b/"
                     target="_blank"
                 >
                     <FaLinkedin />
@@ -50,10 +46,10 @@ const Footer_new = () => {
                     <FaTwitter />
                 </SocialIconLink>
                 <SocialIconLink
-                    href="//www.twitter.com/Vova79605562"
+                    href="https://dev.to/vovaushenko"
                     target="_blank"
                 >
-                    <FaYoutube />
+                    <FaDev />
                 </SocialIconLink>
             </SocialLinksWrapper>
             <ToTopWrapper>
