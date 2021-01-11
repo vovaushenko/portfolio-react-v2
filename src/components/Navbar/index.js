@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            Logo
+                            VU
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="discover"
+                                    to="portfolio"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -71,7 +71,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="services"
+                                    to="skills"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="signup"
+                                    to="footer"
                                     smooth={true}
                                     duration={500}
                                     spy={true}

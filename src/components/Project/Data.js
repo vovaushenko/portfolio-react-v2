@@ -4,7 +4,7 @@ import project3 from '../../images/project-3.png';
 import project4 from '../../images/project-4.png';
 
 export const projectOne = {
-    id: '',
+    id: 'portfolio',
     reverse: false,
     lightMode: false,
 
@@ -27,7 +27,7 @@ export const projectOne = {
 export const projectTwo = {
     id: '',
     reverse: true,
-    lightMode: true,
+    lightMode: false,
 
     header: 'LinkedIn Clone',
     subHeader: 'Solo Project | Three Weeks',
@@ -67,7 +67,7 @@ export const projectThree = {
 export const projectFour = {
     id: '',
     reverse: true,
-    lightMode: true,
+    lightMode: false,
 
     header: 'LinkedIn Clone',
     subHeader: 'Solo Project | Three Weeks',

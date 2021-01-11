@@ -1,122 +1,71 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-// ************  Footer  Container  ****************
+// ************ Footer Container **************
+
 export const FooterContainer = styled.footer`
-    background-color: #101522;
-`;
-// ************  Footer Wrap  ****************
-export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    background: rgb(1, 13, 10);
+    background: radial-gradient(
+        circle,
+        rgba(1, 13, 10, 1) 3%,
+        rgba(1, 6, 6, 1) 14%,
+        rgba(1, 6, 6, 1) 30%,
+        rgba(1, 46, 29, 1) 39%,
+        rgba(1, 6, 6, 1) 43%,
+        rgba(1, 30, 20, 1) 50%,
+        rgba(1, 58, 36, 1) 58%,
+        rgba(1, 86, 52, 1) 66%,
+        rgba(1, 191, 113, 1) 77%,
+        rgba(1, 146, 87, 1) 79%
+    );
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
+    padding: 20px;
     align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
+    /* border-top: #fff 1px solid; */
 `;
-// ************  Footer Links Container  ****************
-export const FooterLinksContainer = styled.div`
+
+// ************ Links Wrapper **************
+
+export const SocialLinksWrapper = styled.div`
     display: flex;
-    justify-content: center;
-
-    @media screen and (max-width: 820px) {
-        padding-top: 32px;
-    } ;
 `;
 
-// ************  Footer Links Container  ****************
-export const FooterLinksWrapper = styled.div`
-    display: flex;
-
-    @media screen and (max-width: 820px) {
-        flex-direction: column;
-    } ;
-`;
-
-// ************  Footer Link Items  ****************
-export const FooterLinkItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-    color: #fff;
-
-    @media screen and (max-width: 420px) {
-        margin: 0;
-        padding: 10px;
-        width: 100%;
-    } ;
-`;
-
-// ************  Footer Link Title  ****************
-export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
-    margin-bottom: 16px;
-`;
-
-// ************  Footer Link  ****************
-export const FooterLink = styled(Link)`
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-
-    &:hover {
-        color: #01bf71;
-        transition: 0.3s ease-out;
-    }
-`;
-
-//////////////////////////////////////////////////////////////////
-//               SOCIAL MEDIA
-//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-export const SocialMedia = styled.section`
-    max-width: 1000px;
-    width: 100%;
-`;
-
-export const SocialMediaWrap = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 40px auto 0 auto;
-
-    @media screen and (max-width: 820px) {
-        flex-direction: column;
-    } ;
-`;
-
-export const SocialLogo = styled(Link)`
-    color: #fff;
-    justify-self: start;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    font-weight: bold;
-`;
-
-export const WebsiteRight = styled.small`
-    color: #fff;
-    margin-bottom: 16px;
-`;
-
-export const SocialIcons = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-`;
+// ************ Social Icon Link ***********
 
 export const SocialIconLink = styled.a`
     color: #fff;
-    font-size: 24px;
+    font-size: 32px;
+    padding: 5px 30px;
+    &:hover {
+        color: #01bf71;
+        transition: all 0.5s ease-in-out;
+
+        transform: rotate(360deg);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10px 15px;
+    }
+`;
+
+// ************To Top Wrapper***********
+export const ToTopWrapper = styled.div`
+    display: flex;
+`;
+
+export const ToTop = styled(Link)`
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: #01bf71;
+        transform: translateY(-10px);
+        transition: all 0.6s ease-in-out;
+    }
 `;

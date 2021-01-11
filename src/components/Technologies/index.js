@@ -23,10 +23,10 @@ import {
 const Tech = () => {
     return (
         <>
-            <TechContainer>
+            <TechContainer id="skills">
                 <TechHeader>
-                    Without establishing an order of preferences, these are some of the technologies
-                    I enjoy working with
+                    Without establishing an order of preferences, these are some
+                    of the technologies I enjoy working with
                 </TechHeader>
                 <TechWrapper>
                     <TechCard>

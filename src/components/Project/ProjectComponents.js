@@ -97,7 +97,7 @@ export const ProjectLinkWrapper = styled.div`
 
     width: 50%;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 500px) {
         width: 75%;
     }
 `;
@@ -115,7 +115,8 @@ export const ProjectGitHubLink = styled.a`
     padding: 5px;
 
     &:hover {
-        background-color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
+        background-color: ${({ lightMode }) =>
+            lightMode ? '#01bf71' : '#fff'};
     }
 `;
 export const ProjectLiveLink = styled.a`
@@ -130,7 +131,8 @@ export const ProjectLiveLink = styled.a`
     padding: 5px;
 
     &:hover {
-        background-color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
+        background-color: ${({ lightMode }) =>
+            lightMode ? '#01bf71' : '#fff'};
     }
 `;
 

@@ -22,13 +22,13 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="about" onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>
+                    <SidebarLink to="portfolio" onClick={toggle}>
                         Portfolio
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
+                    <SidebarLink to="skills" onClick={toggle}>
                         Skills
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
+                    <SidebarLink to="footer" onClick={toggle}>
                         Contact
                     </SidebarLink>
                 </SidebarMenu>

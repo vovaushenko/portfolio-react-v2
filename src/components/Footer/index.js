@@ -1,108 +1,64 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from 'react-icons/fa';
-import {
-  FooterContainer,
-  FooterLink,
-  FooterLinkItems,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkTitle,
-  FooterWrap,
-  SocialIconLink,
-  SocialIcons,
-  SocialLogo,
-  SocialMedia,
-  SocialMediaWrap,
-  WebsiteRight,
+    FooterContainer,
+    SocialIconLink,
+    SocialLinksWrapper,
+    ToTop,
+    ToTopText,
+    ToTopWrapper,
 } from './FooterElements';
 
-const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
-  return (
-    <FooterContainer>
-      <FooterWrap>
-        {/* <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Feel free to contact</FooterLinkTitle>
-                            <FooterLink to="/signin">LinkedIn</FooterLink>
-                            <FooterLink to="/signin">Twitter</FooterLink>
-                            <FooterLink to="/signin">Github</FooterLink>
-                            <FooterLink to="/signin">Codewars</FooterLink>
-                            <FooterLink to="/signin">Facebook</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Feel free to contact</FooterLinkTitle>
-                            <FooterLink to="/signin">LinkedIn</FooterLink>
-                            <FooterLink to="/signin">Twitter</FooterLink>
-                            <FooterLink to="/signin">Github</FooterLink>
-                            <FooterLink to="/signin">Codewars</FooterLink>
-                            <FooterLink to="/signin">Facebook</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
+import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
 
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Feel free to contact</FooterLinkTitle>
-                            <FooterLink to="/signin">LinkedIn</FooterLink>
-                            <FooterLink to="/signin">Twitter</FooterLink>
-                            <FooterLink to="/signin">Github</FooterLink>
-                            <FooterLink to="/signin">Codewars</FooterLink>
-                            <FooterLink to="/signin">Facebook</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Feel free to contact</FooterLinkTitle>
-                            <FooterLink to="/signin">LinkedIn</FooterLink>
-                            <FooterLink to="/signin">Twitter</FooterLink>
-                            <FooterLink to="/signin">Github</FooterLink>
-                            <FooterLink to="/signin">Codewars</FooterLink>
-                            <FooterLink to="/signin">Facebook</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                </FooterLinksContainer> */}
-        <SocialMedia>
-          <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>
-              Logo
-            </SocialLogo>
-            <WebsiteRight>
-              Vova Ushenko 🤝 {new Date().getFullYear()} All Rights Reserved
-            </WebsiteRight>
-            <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="YouTube">
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink
-                href="//www.twitter.com/Vova79605562"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
-          </SocialMediaWrap>
-        </SocialMedia>
-      </FooterWrap>
-    </FooterContainer>
-  );
+import { AiOutlineToTop } from 'react-icons/ai';
+import { SiCodewars } from 'react-icons/si';
+
+const Footer_new = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+    return (
+        <FooterContainer id="footer">
+            <SocialLinksWrapper>
+                <SocialIconLink
+                    href="https://github.com/vovaushenko"
+                    target="_blank"
+                >
+                    <FaGithub />
+                </SocialIconLink>
+                <SocialIconLink
+                    href="https://www.codewars.com/users/RampCV"
+                    target="_blank"
+                >
+                    <SiCodewars />
+                </SocialIconLink>
+                <SocialIconLink
+                    href="https://www.linkedin.com/in/volodymyr-ushenko-5087a87b/"
+                    target="_blank"
+                >
+                    <FaLinkedin />
+                </SocialIconLink>
+                <SocialIconLink
+                    href="//www.twitter.com/Vova79605562"
+                    target="_blank"
+                >
+                    <FaTwitter />
+                </SocialIconLink>
+                <SocialIconLink
+                    href="https://dev.to/vovaushenko"
+                    target="_blank"
+                >
+                    <FaDev />
+                </SocialIconLink>
+            </SocialLinksWrapper>
+            <ToTopWrapper>
+                <ToTop to="/" onClick={toggleHome}>
+                    <AiOutlineToTop />
+                </ToTop>
+            </ToTopWrapper>
+        </FooterContainer>
+    );
 };
 
-export default Footer;
+export default Footer_new;
