@@ -1,10 +1,11 @@
 import React from 'react';
+import EmptyPage from '../components/EmptyPage';
 
 const SigninPage = () => {
     return (
-        <div>
-            <h1>Contact Page</h1>
-        </div>
+        <>
+            <EmptyPage />
+        </>
     );
 };
 
