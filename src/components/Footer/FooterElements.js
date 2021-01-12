@@ -4,20 +4,8 @@ import { Link } from 'react-router-dom';
 // ************ Footer Container **************
 
 export const FooterContainer = styled.footer`
-    background: rgb(1, 13, 10);
-    background: radial-gradient(
-        circle,
-        rgba(1, 13, 10, 1) 3%,
-        rgba(1, 6, 6, 1) 14%,
-        rgba(1, 6, 6, 1) 30%,
-        rgba(1, 46, 29, 1) 39%,
-        rgba(1, 6, 6, 1) 43%,
-        rgba(1, 30, 20, 1) 50%,
-        rgba(1, 58, 36, 1) 58%,
-        rgba(1, 86, 52, 1) 66%,
-        rgba(1, 191, 113, 1) 77%,
-        rgba(1, 146, 87, 1) 79%
-    );
+    background: #010606;
+    border-top: 1px solid #01bf71;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
