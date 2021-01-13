@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
     background: #010606;
-    border-top: 1px solid #01bf71;
+    /* border-top: 1px solid #01bf71; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     padding: 20px;
     align-items: center;
-    /* border-top: #fff 1px solid; */
+    margin-top: 25px;
 `;
 
 // ************ Links Wrapper **************

@@ -3,15 +3,56 @@ import styled from 'styled-components';
 import { FaReact, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
 import { SiFirebase, SiJavascript } from 'react-icons/si';
 import { FiMonitor } from 'react-icons/fi';
+// *************** Project Wrap ******************
+export const ProjectWrap = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 2px solid #01bf71;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 12px;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
+`;
+
+// ************ Project Dots ******************
+export const ProjectDotsContainer = styled.div`
+    flex: 0.2;
+    border-bottom: 2px solid #01bf71;
+    display: flex;
+    padding: 5px;
+`;
+
+export const ProjectDot = styled.div`
+    background-color: ${(props) => props.color};
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+`;
 
 // *************** CONTAINER ******************
 
 export const ProjectContainer = styled.div`
+    flex: 0.8;
     display: flex;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
     max-width: 1500px;
     max-height: 1100px;
-    margin: auto;
+    margin: 0 auto;
     padding: 60px 0;
     align-items: center;
     border-radius: 30px;

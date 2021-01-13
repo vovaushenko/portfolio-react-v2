@@ -19,6 +19,9 @@ import {
     ButtonGitIcon,
     ButtonLiveIcon,
     ProjectLinkWrapper,
+    ProjectWrap,
+    ProjectDotsContainer,
+    ProjectDot,
 } from './ProjectComponents';
 
 // https://www.lauracharvey.dev/
@@ -40,7 +43,12 @@ const Project = ({
     id,
 }) => {
     return (
-        <>
+        <ProjectWrap>
+            <ProjectDotsContainer>
+                <ProjectDot color={'#fc6058'} />
+                <ProjectDot color={'#fec02f'} />
+                <ProjectDot color={'#2aca3e'} />
+            </ProjectDotsContainer>
             <ProjectContainer id={id} reverse={reverse} lightMode={lightMode}>
                 <ProjectLeftColumn>
                     <ProjectImage src={img} />
@@ -94,7 +102,7 @@ const Project = ({
                     </ProjectLinkWrapper>
                 </ProjectRigthColumn>
             </ProjectContainer>
-        </>
+        </ProjectWrap>
     );
 };
 
