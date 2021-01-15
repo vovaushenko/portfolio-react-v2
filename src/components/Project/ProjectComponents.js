@@ -7,14 +7,18 @@ import { FiMonitor } from 'react-icons/fi';
 export const ProjectWrap = styled.div`
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 75%;
     border: 2px solid #01bf71;
     border-radius: 10px;
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-
     box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 12px;
+    :hover {
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 10px 25px;
+        transform: translateY(-1px);
+    }
+
     @media screen and (max-width: 768px) {
         width: 90%;
     }
@@ -150,7 +154,7 @@ export const ProjectGitHubLink = styled.a`
 
     background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
-    border-radius: 30px;
+    border-radius: 10px;
     text-decoration: none;
     margin: 10px;
     padding: 5px;
@@ -166,7 +170,7 @@ export const ProjectLiveLink = styled.a`
     color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
     background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
-    border-radius: 30px;
+    border-radius: 10px;
     text-decoration: none;
     margin: 10px;
     padding: 5px;
