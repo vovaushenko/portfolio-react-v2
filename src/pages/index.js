@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import ContactForm from '../components/ContactForm';
 
 import {
     projectFour,
@@ -31,6 +32,7 @@ const Home = () => {
             <Project {...projectTwo} />
             <Project {...projectThree} />
             <Project {...projectFour} />
+            <ContactForm />
 
             <Footer />
         </>
