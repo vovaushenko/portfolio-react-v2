@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
+import emailjs from 'emailjs-com';
+import { WaveSpinner } from 'react-spinners-kit';
 
 const sharedStyles = css`
   background-color: #010606;
@@ -16,7 +18,6 @@ const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 0 20px;
 
   h2 {
@@ -45,7 +46,7 @@ const StyledInput = styled.input`
     background-color: #010606;
     outline: none !important;
     border-color: #01bf71;
-    box-shadow: 0 0 5px #01bf71;
+    box-shadow: 0 0 10px #01bf71;
   }
 `;
 
@@ -88,20 +89,43 @@ const StyledFieldset = styled.fieldset`
 
   legend {
     padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
   }
   label {
     padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+    }
   }
 
   input {
     margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
   }
 `;
 
 const StyledError = styled.div`
-  color: red;
+  color: #ff0000;
+  border-radius: 5px;
   font-weight: 800;
-  margin: 0 0 40px 0;
+  text-align: center;
+  margin-top: 10px;
+`;
+const StyledSuccess = styled.div`
+  color: #00ff00;
+  padding: 10px;
+
+  border-radius: 5px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 10px;
+`;
+const StyledLoading = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const initialState = {
@@ -114,20 +138,41 @@ const initialState = {
 const ContactForm = () => {
   const [state, setState] = useState(initialState);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     for (let key in state) {
       if (state[key] === '') {
-        setError(`You shoud provide the ${key}`);
+        setError(`😔 Please, provide the ${key}`);
         return;
       }
     }
     setError('');
 
-    console.log('submitted');
-    console.log(state);
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        'service_zkbmlar',
+        'template_lr1w6mq',
+        e.target,
+        'user_KEdsdmn9zhqBYb1cfXl6I'
+      )
+      .then(
+        (result) => {
+          setSuccess(true);
+          setState(initialState);
+          setLoading(false);
+        },
+        (error) => {
+          setSuccess(false);
+          setLoading(false);
+          setError(error);
+        }
+      );
   };
 
   const handleInput = (e) => {
@@ -141,7 +186,7 @@ const ContactForm = () => {
     <>
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
-          <h2>Connect With Me 👋</h2>
+          <h2 style={{ color: '#01bf71' }}>Connect With Me 👋</h2>
           <label htmlFor="name">Name</label>
           <StyledInput
             type="text"
@@ -165,7 +210,7 @@ const ContactForm = () => {
                 type="radio"
                 value="personal"
                 name="subject"
-                checked={state.checked === 'personal'}
+                checked={state.subject === 'personal'}
                 onChange={handleInput}
               />
               Personal
@@ -175,7 +220,7 @@ const ContactForm = () => {
                 type="radio"
                 value="ecommerce"
                 name="subject"
-                checked={state.checked === 'ecommerce'}
+                checked={state.subject === 'ecommerce'}
                 onChange={handleInput}
               />
               E-commerce
@@ -185,7 +230,7 @@ const ContactForm = () => {
                 type="radio"
                 value="landing"
                 name="subject"
-                checked={state.checked === 'landing'}
+                checked={state.subject === 'landing'}
                 onChange={handleInput}
               />
               Landing Page
@@ -195,7 +240,7 @@ const ContactForm = () => {
                 type="radio"
                 value="cooperation"
                 name="subject"
-                checked={state.checked === 'cooperation'}
+                checked={state.subject === 'cooperation'}
                 onChange={handleInput}
               />
               Cooperation
@@ -212,6 +257,17 @@ const ContactForm = () => {
             <StyledError>
               <p>{error}</p>
             </StyledError>
+          )}
+          {loading && (
+            <StyledLoading>
+              <WaveSpinner size={50} color="#01bf71" />
+            </StyledLoading>
+          )}
+
+          {success && (
+            <StyledSuccess>
+              <p>Your message was successfuly sent 😉</p>
+            </StyledSuccess>
           )}
 
           <StyledButton type="submit">Send Message</StyledButton>
