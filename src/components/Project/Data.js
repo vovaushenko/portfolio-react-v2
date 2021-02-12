@@ -35,8 +35,8 @@ export const projectTwo = {
     `,
     img: project2,
     alt: 'Google Search',
-    gitUrl: 'https://google.com',
-    liveUrl: 'https://github.com/vovaushenko/CodeWars',
+    gitUrl: 'https://github.com/vovaushenko/2_linkedin-react-clone-v1',
+    liveUrl: 'https://linkedin-clone-v1.web.app/',
 
     isVisibleReact: true,
     isVisibleCss: true,

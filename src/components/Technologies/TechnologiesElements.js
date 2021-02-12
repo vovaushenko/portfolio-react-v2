@@ -50,6 +50,7 @@ export const TechWrapper = styled.div`
 export const TechSubHeader = styled.h4`
     letter-spacing: 1.5px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 `;
 
 //  *********** Tech Card *******************
@@ -71,8 +72,8 @@ export const TechCard = styled.div`
 
 // *********** Tech Icon *******************
 export const TechIcon = styled.img`
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-bottom: 10px;
 
     &:hover {
