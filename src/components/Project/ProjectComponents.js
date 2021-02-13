@@ -145,13 +145,13 @@ export const ProjectGitHubLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  white-space: nowrap;
+  width: 100px;
 
   color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
-
   background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
-  border-radius: 10px;
+  border-radius: 50px;
   text-decoration: none;
   margin: 10px;
   padding: 5px;
@@ -166,12 +166,13 @@ export const ProjectLiveLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  white-space: nowrap;
+  width: 100px;
 
   color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
   background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
-  border-radius: 10px;
+  border-radius: 50px;
   text-decoration: none;
   margin: 10px;
   padding: 5px;

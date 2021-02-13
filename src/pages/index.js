@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Russo One', sans-serif;
 }
 p,input,textarea {
     font-family: 'Poppins', sans-serif;
