@@ -37,8 +37,8 @@ const HeroSection = () => {
             to="skills"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary={true}
-            dark={true}
+            primary={false}
+            dark={false}
             smooth={true}
             duration={500}
             spy={true}
