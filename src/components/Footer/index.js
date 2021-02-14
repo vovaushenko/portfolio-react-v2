@@ -1,13 +1,12 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import linkedin from '../../images/icons/linkedin-bounce.gif';
+
 import {
   FooterContainer,
   SocialIconLink,
   SocialLinksWrapper,
   ToTop,
   ToTopWrapper,
-  SocialIcon,
 } from './FooterElements';
 
 import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
