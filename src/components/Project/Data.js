@@ -72,13 +72,13 @@ export const projectFour = {
   reverse: true,
   lightMode: false,
 
-  header: 'LinkedIn Clone',
+  header: 'Google Search Clone',
   subHeader: 'Solo Project | Three Weeks',
   description: `A Google Search Clone that is built using React, Firebase and Google search api.`,
   img: project4,
   alt: 'Google Search',
   gitUrl: 'https://github.com/vovaushenko/google-search-clone',
-  liveUrl: 'https://google.com',
+  liveUrl: 'https://search-clone-2f6af.web.app/',
 
   isVisibleReact: true,
   isVisibleCss: true,

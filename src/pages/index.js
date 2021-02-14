@@ -50,6 +50,7 @@ const Home = () => {
       <Project {...projectTwo} />
       <Project {...projectThree} />
       <Project {...projectFour} />
+
       <ContactForm />
 
       <Footer />
