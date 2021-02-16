@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
+import dude from '../../images/Hackerman.png';
 import { WaveSpinner } from 'react-spinners-kit';
 
 const sharedStyles = css`
@@ -266,7 +267,7 @@ const ContactForm = () => {
 
           {success && (
             <StyledSuccess>
-              <p>Your message was successfuly sent 😉</p>
+              <p>✨✨✨Your message was successfuly sent✨✨✨</p>
             </StyledSuccess>
           )}
 

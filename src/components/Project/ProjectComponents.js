@@ -8,7 +8,7 @@ export const ProjectWrap = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   border: 2px solid #01bf71;
   border-radius: 10px;
 
