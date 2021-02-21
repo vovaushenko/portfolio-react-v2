@@ -23,57 +23,62 @@ import {
 const Tech = () => {
   return (
     <>
-      <TechContainer id="skills">
+      <TechContainer>
         <TechHeader>
-          Without establishing an order of preferences, these are some of the
-          technologies I enjoy working with
+          Languages I speak, Dev & Design Tools that I particularly enjoy
         </TechHeader>
         <TechWrapper>
-          <TechCard>
+          <TechCard href="https://www.javascript.com/" target="_blank">
             <TechIcon src={js} />
             <TechSubHeader>Javascript</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+          >
             <TechIcon src={html} />
             <TechSubHeader>HTML</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+          >
             <TechIcon src={css} />
             <TechSubHeader>CSS</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://reactjs.org/" target="_blank">
             <TechIcon src={react} />
             <TechSubHeader>React</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://redux.js.org/" target="_blank">
             <TechIcon src={redux} />
             <TechSubHeader>Redux</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://nodejs.org/en/" target="_blank">
             <TechIcon src={node} />
             <TechSubHeader>Node</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://www.npmjs.com/" target="_blank">
             <TechIcon src={npm} />
             <TechSubHeader>Npm</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://styled-components.com/" target="_blank">
             <TechIcon src={styled} />
             <TechSubHeader>Styled</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://www.typescriptlang.org/" target="_blank">
             <TechIcon src={typescript} />
             <TechSubHeader>TypeScript</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://git-scm.com/" target="_blank">
             <TechIcon src={git} />
             <TechSubHeader>Git</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://github.com/" target="_blank">
             <TechIcon src={github} />
             <TechSubHeader>Github</TechSubHeader>
           </TechCard>
-          <TechCard>
+          <TechCard href="https://www.mongodb.com/" target="_blank">
             <TechIcon src={mongo} />
             <TechSubHeader>MongoDB</TechSubHeader>
           </TechCard>

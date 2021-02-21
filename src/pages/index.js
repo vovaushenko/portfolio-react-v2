@@ -13,6 +13,7 @@ import {
 import Tech from '../components/Technologies';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
+import About from '../components/About';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -45,6 +46,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
+      <About />
       <Tech />
       <Project {...projectOne} />
       <Project {...projectTwo} />

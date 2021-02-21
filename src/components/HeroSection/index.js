@@ -28,8 +28,8 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Hi there! 👋</HeroH1>
         <HeroP>
-          Glad to meet you! I'm Vova, I'm a 31 years old full-stack
-          web-developer. I enjoy working with React ⚛️ and Node JS ♨️
+          Glad to meet you! I'm Vova, an interactive web-developer currently
+          based in Ottawa
         </HeroP>
 
         <HeroBtnWrapper>
