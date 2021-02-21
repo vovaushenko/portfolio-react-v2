@@ -21,16 +21,24 @@ export const SocialLinksWrapper = styled.div`
 // ************ Social Icon Link ***********
 
 export const SocialIconLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  font-size: 30px;
-  padding: 5px 20px;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  margin: 1rem 0.7rem;
+  border: 1px solid white;
+  border-radius: 50%;
+
   &:hover {
     color: #01bf71;
-    transition: all 0.5s ease-in-out;
+    border: 1px solid #01bf71;
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (max-width: 500px) {
-    padding: 10px 15px;
+    padding: 0.3em;
   }
 `;
 

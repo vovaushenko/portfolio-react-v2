@@ -20,6 +20,7 @@ const Footer_new = () => {
   };
   return (
     <FooterContainer id="footer">
+      <p>Handcrafted by me &copy; 2021</p>
       <SocialLinksWrapper>
         <SocialIconLink href="https://github.com/vovaushenko" target="_blank">
           <FaGithub />

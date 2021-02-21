@@ -62,13 +62,13 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* glassmorphism */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  backdrop-filter: blur(4px);
-  border: solid 2px transparent;
+
+  background: rgba(11, 156, 49, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  border: solid 0px transparent;
   background-clip: padding-box;
-  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  box-shadow: 1px 5px 10px 5px rgba(1, 191, 113, 0.2);
 `;
 
 // **********Hero H1******************
@@ -77,7 +77,7 @@ export const HeroH1 = styled.h1`
   color: #01bf71;
   font-size: 40px;
   text-align: center;
-  font-weight: 100;
+
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
