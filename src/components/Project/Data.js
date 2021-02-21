@@ -4,7 +4,7 @@ import project3 from '../../images/projects/rntls.png';
 import project4 from '../../images/projects/Google-search-clone.png';
 
 export const projectOne = {
-  id: 'portfolio',
+  id: '',
   reverse: false,
   lightMode: false,
 

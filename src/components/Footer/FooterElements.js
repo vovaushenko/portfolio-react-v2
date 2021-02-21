@@ -61,3 +61,9 @@ export const ToTop = styled(Link)`
     transition: all 0.6s ease-in-out;
   }
 `;
+
+export const FooterCopyright = styled.p`
+  font-size: 1rem;
+  letter-spacing: 1.1px;
+  color: #01bf71;
+`;

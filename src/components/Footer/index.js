@@ -3,6 +3,7 @@ import { animateScroll as scroll } from 'react-scroll';
 
 import {
   FooterContainer,
+  FooterCopyright,
   SocialIconLink,
   SocialLinksWrapper,
   ToTop,
@@ -20,7 +21,7 @@ const Footer_new = () => {
   };
   return (
     <FooterContainer id="footer">
-      <p>Handcrafted by me &copy; 2021</p>
+      <FooterCopyright>Handcrafted by me &copy; 2021</FooterCopyright>
       <SocialLinksWrapper>
         <SocialIconLink href="https://github.com/vovaushenko" target="_blank">
           <FaGithub />

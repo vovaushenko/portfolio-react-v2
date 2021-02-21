@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
-import dude from '../../images/Hackerman.png';
 import { WaveSpinner } from 'react-spinners-kit';
+import avatar from '../../images/avatar.png';
 
 const sharedStyles = css`
   background-color: #010606;
-  color: #01bf71;
-  border-radius: 5px;
-  height: 40px;
+  color: #fff;
+  height: 2rem;
   border: 2px solid #01bf71;
   border-radius: 5px;
-  margin: 10px 0 20px 0;
-  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  padding: 1.5rem;
+  letter-spacing: 1.1px;
 `;
 
 const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 1.5rem;
 
   h2 {
     text-align: center;
@@ -32,7 +32,7 @@ const StyledForm = styled.form`
   padding: 40px;
   border: 2px solid #01bf71;
   border-radius: 10px;
-  box-sizing: borde-box;
+  box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 `;
 
@@ -53,11 +53,12 @@ const StyledInput = styled.input`
 
 const StyledTextArea = styled.textarea`
   width: 100%;
-  color: #01bf71;
+  color: #fff;
   min-height: 100px;
   border: 2px solid #01bf71;
   background-color: #010606;
   border-radius: 5px;
+  letter-spacing: 1.1px;
   resize: none;
 
   :focus {
@@ -73,13 +74,21 @@ const StyledButton = styled.button`
   display: block;
   background-color: #01bf71;
   color: #010606;
-  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
   border: 0;
-  border-radius: 5px;
+  border-radius: 50px;
   height: 40px;
-  padding: 0 20px;
+  padding: 0 2rem;
   cursor: pointer;
   box-sizing: border-box;
+  margin-top: 1rem;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+  }
 `;
 
 const StyledFieldset = styled.fieldset`
@@ -97,7 +106,7 @@ const StyledFieldset = styled.fieldset`
     font-family: 'Poppins', sans-serif;
 
     @media screen and (max-width: 500px) {
-      font-size: 12px;
+      display: flex;
     }
   }
 
@@ -129,6 +138,21 @@ const StyledLoading = styled.div`
   align-items: center;
 `;
 
+const StyledAvatar = styled.img`
+  width: 150px;
+`;
+
+const AvatarWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+`;
+const StyledHeader = styled.h2`
+  margin: 2rem 0;
+  letter-spacing: 1.1px;
+`;
 const initialState = {
   name: '',
   email: '',
@@ -185,9 +209,13 @@ const ContactForm = () => {
 
   return (
     <>
+      <AvatarWrapper>
+        <StyledAvatar src={avatar} />
+        <StyledHeader>Always happy to hear from you </StyledHeader>
+      </AvatarWrapper>
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
-          <h2 style={{ color: '#01bf71' }}>Connect With Me 👋</h2>
+          <h2>Connect With Me 👋</h2>
           <label htmlFor="name">Name</label>
           <StyledInput
             type="text"

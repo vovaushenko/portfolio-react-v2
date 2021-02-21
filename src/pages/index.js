@@ -14,6 +14,7 @@ import Tech from '../components/Technologies';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
 import About from '../components/About';
+import ProjectHeader from '../components/ProjectHeader';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -48,6 +49,7 @@ const Home = () => {
       <HeroSection />
       <About />
       <Tech />
+      <ProjectHeader />
       <Project {...projectOne} />
       <Project {...projectTwo} />
       <Project {...projectThree} />

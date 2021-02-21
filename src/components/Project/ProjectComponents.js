@@ -8,7 +8,7 @@ export const ProjectWrap = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto 40px;
+  margin: 0 auto 2rem;
   border: 2px solid #01bf71;
   border-radius: 10px;
 
@@ -53,12 +53,8 @@ export const ProjectContainer = styled.div`
   flex: 0.8;
   display: flex;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-  margin: 0 auto;
-  padding: 60px 0;
+  padding: 2rem 0;
   align-items: center;
-  border-radius: 30px;
-
-  /* background: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')}; */
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -95,28 +91,23 @@ export const ProjectRigthColumn = styled.div`
 
 export const ProjectHeader = styled.h2`
   color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
-  letter-spacing: 1.4px;
-  padding-top: 15px;
-  font-size: 30px;
+  letter-spacing: 1.1px;
+  font-size: 2rem;
+  margin-top: 1rem;
 `;
 export const ProjectSubHeader = styled.p`
   color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
-  padding: 15px;
-  letter-spacing: 1.3px;
+  margin: 1rem 0;
+  letter-spacing: 1.1px;
 `;
 export const ProjectDescription = styled.p`
   color: ${({ lightMode }) => (lightMode ? '#010606' : '#f9f9f9')};
-  padding: 20px;
-  margin: 10px;
+  width: 90%;
+  margin: 1rem 0;
   font-size: 14px;
   letter-spacing: 1.1px;
-  max-width: 600px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     font-size: 12px;
   }
 `;
@@ -131,13 +122,9 @@ export const ProjectIcons = styled.div`
 
 export const ProjectLinkWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
-
-  width: 50%;
-
-  @media screen and (max-width: 500px) {
-    width: 75%;
-  }
+  align-items: center;
+  justify-content: center;
+  width: 75%;
 `;
 
 // *************** Links ******************
@@ -146,15 +133,17 @@ export const ProjectGitHubLink = styled.a`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: 100px;
+  width: 7rem;
+  font-size: 1rem;
+  font-weight: 700;
 
   color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
   background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
   border-radius: 50px;
   text-decoration: none;
-  margin: 10px;
-  padding: 5px;
+  margin: 1rem;
+  padding: 0.5em;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -167,15 +156,17 @@ export const ProjectLiveLink = styled.a`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: 100px;
+  width: 7rem;
+  font-size: 1rem;
+  font-weight: 700;
 
   color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
   background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
 
   border-radius: 50px;
   text-decoration: none;
-  margin: 10px;
-  padding: 5px;
+  margin: 1rem;
+  padding: 0.5em;
   transition: all 0.2s ease-in-out;
 
   &:hover {

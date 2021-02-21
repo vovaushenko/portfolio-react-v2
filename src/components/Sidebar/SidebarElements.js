@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
-import { Link as LinkRoute } from 'react-router-dom';
 
 import { FaTimes } from 'react-icons/fa';
 
