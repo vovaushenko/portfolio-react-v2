@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { FaReact, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiFirebase, SiJavascript } from 'react-icons/si';
+import { SiFirebase, SiJavascript, SiRedux, SiMongodb } from 'react-icons/si';
 import { FiMonitor } from 'react-icons/fi';
 // *************** Project Wrap ******************
 export const ProjectWrap = styled.div`
@@ -90,18 +90,18 @@ export const ProjectRigthColumn = styled.div`
 // *************** Typography ******************
 
 export const ProjectHeader = styled.h2`
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
   letter-spacing: 1.1px;
   font-size: 2rem;
   margin-top: 1rem;
 `;
 export const ProjectSubHeader = styled.p`
-  color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
+  color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
   margin: 1rem 0;
   letter-spacing: 1.1px;
 `;
 export const ProjectDescription = styled.p`
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#f9f9f9')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#f9f9f9')};
   width: 90%;
   margin: 1rem 0;
   font-size: 14px;
@@ -137,8 +137,8 @@ export const ProjectGitHubLink = styled.a`
   font-size: 1rem;
   font-weight: 700;
 
-  color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
-  background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#010606')};
+  background-color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 
   border-radius: 50px;
   text-decoration: none;
@@ -148,7 +148,7 @@ export const ProjectGitHubLink = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background-color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
+    background-color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
   }
 `;
 export const ProjectLiveLink = styled.a`
@@ -160,8 +160,8 @@ export const ProjectLiveLink = styled.a`
   font-size: 1rem;
   font-weight: 700;
 
-  color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#010606')};
-  background-color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#010606')};
+  background-color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 
   border-radius: 50px;
   text-decoration: none;
@@ -171,7 +171,7 @@ export const ProjectLiveLink = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background-color: ${({ lightMode }) => (lightMode ? '#01bf71' : '#fff')};
+    background-color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
   }
 `;
 
@@ -181,41 +181,53 @@ export const ReactIcon = styled(FaReact)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 export const CssIcon = styled(FaCss3Alt)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 export const FireBaseIcon = styled(SiFirebase)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 export const JsIcon = styled(SiJavascript)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 export const NodeIcon = styled(FaNodeJs)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
+`;
+export const ReduxIcon = styled(SiRedux)`
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  margin-left: 8px;
+  font-size: 25px;
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
+`;
+export const MongoIcon = styled(SiMongodb)`
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  margin-left: 8px;
+  font-size: 25px;
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 // *************** ButtonIcon ******************
 export const ButtonGitIcon = styled(FaGithub)`
   margin-right: 10px;
   font-size: 20px;
 
-  color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#000')};
+  color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#000')};
 `;
 export const ButtonLiveIcon = styled(FiMonitor)`
   margin-right: 10px;
   font-size: 20px;
-  color: ${({ lightMode }) => (lightMode ? '#f9f9f9' : '#000')};
+  color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#000')};
 `;

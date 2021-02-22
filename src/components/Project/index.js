@@ -6,6 +6,8 @@ import {
   FireBaseIcon,
   JsIcon,
   NodeIcon,
+  MongoIcon,
+  ReduxIcon,
   ProjectContainer,
   ProjectDescription,
   ProjectHeader,
@@ -28,7 +30,7 @@ import {
 
 const Project = ({
   reverse,
-  lightMode,
+  lightmode,
   header,
   subHeader,
   description,
@@ -38,6 +40,8 @@ const Project = ({
   isVisibleFireBase,
   isVisibleJS,
   isVisibleNode,
+  isVisibleRedux = +false,
+  isVisibleMongo = +false,
   gitUrl,
   liveUrl,
   id,
@@ -49,41 +53,45 @@ const Project = ({
         <ProjectDot color={'#fec02f'} />
         <ProjectDot color={'#2aca3e'} />
       </ProjectDotsContainer>
-      <ProjectContainer id={id} reverse={reverse} lightMode={lightMode}>
+      <ProjectContainer id={id} reverse={+reverse} lightmode={+lightmode}>
         <ProjectLeftColumn>
           <ProjectImage src={img} />
         </ProjectLeftColumn>
 
         <ProjectRigthColumn>
-          <ProjectHeader lightMode={lightMode}>{header}</ProjectHeader>
-          <ProjectSubHeader lightMode={lightMode}>{subHeader}</ProjectSubHeader>
+          <ProjectHeader lightmode={+lightmode}>{header}</ProjectHeader>
+          <ProjectSubHeader lightmode={+lightmode}>
+            {subHeader}
+          </ProjectSubHeader>
           <ProjectIcons>
-            <ReactIcon visible={isVisibleReact} lightMode={lightMode} />
-            <CssIcon visible={isVisibleCss} lightMode={lightMode} />
-            <FireBaseIcon visible={isVisibleFireBase} lightMode={lightMode} />
-            <JsIcon visible={isVisibleJS} lightMode={lightMode} />
-            <NodeIcon visible={isVisibleNode} lightMode={lightMode} />
+            <ReactIcon visible={+isVisibleReact} lightmode={+lightmode} />
+            <CssIcon visible={+isVisibleCss} lightmode={+lightmode} />
+            <FireBaseIcon visible={+isVisibleFireBase} lightmode={+lightmode} />
+            <JsIcon visible={+isVisibleJS} lightmode={+lightmode} />
+            <NodeIcon visible={+isVisibleNode} lightmode={+lightmode} />
+            <ReduxIcon visible={+isVisibleRedux} lightmode={+lightmode} />
+            <MongoIcon visible={+isVisibleMongo} lightmode={+lightmode} />
           </ProjectIcons>
-          <ProjectDescription lightMode={lightMode}>
+          <ProjectDescription lightmode={+lightmode}>
             {description}
           </ProjectDescription>
 
           <ProjectLinkWrapper>
             <ProjectGitHubLink
-              lightMode={lightMode}
+              lightmode={+lightmode}
               href={gitUrl}
               target="_blank"
             >
-              <ButtonGitIcon lightMode={lightMode} />
+              <ButtonGitIcon lightmode={+lightmode} />
               GitHub
             </ProjectGitHubLink>
 
             <ProjectLiveLink
-              lightMode={lightMode}
+              lightmode={+lightmode}
               href={liveUrl}
               target="_blank"
             >
-              <ButtonLiveIcon lightMode={lightMode} />
+              <ButtonLiveIcon lightmode={+lightmode} />
               Live
             </ProjectLiveLink>
           </ProjectLinkWrapper>

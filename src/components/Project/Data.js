@@ -6,7 +6,7 @@ import project4 from '../../images/projects/Google-search-clone.png';
 export const projectOne = {
   id: '',
   reverse: false,
-  lightMode: false,
+  lightmode: false,
 
   header: 'Coffee-shop MERN',
   subHeader: 'Solo Project | Fours Weeks',
@@ -18,15 +18,17 @@ export const projectOne = {
 
   darkText: false,
   isVisibleReact: true,
-  isVisibleCss: true,
-  isVisibleFireBase: true,
-  isVisibleJS: true,
-  isVisibleNode: false,
+  isVisibleCss: false,
+  isVisibleFireBase: false,
+  isVisibleJS: false,
+  isVisibleNode: true,
+  isVisibleRedux: true,
+  isVisibleMongo: true,
 };
 export const projectTwo = {
   id: '',
   reverse: true,
-  lightMode: false,
+  lightmode: false,
 
   header: 'LinkedIn Clone',
   subHeader: 'Solo Project | One Week',
@@ -48,7 +50,7 @@ export const projectTwo = {
 export const projectThree = {
   id: '',
   reverse: false,
-  lightMode: false,
+  lightmode: false,
 
   header: 'RNTL Real Estate',
   subHeader: 'Solo Project | One Week',
@@ -70,7 +72,7 @@ export const projectThree = {
 export const projectFour = {
   id: '',
   reverse: true,
-  lightMode: false,
+  lightmode: false,
 
   header: 'Google Search Clone',
   subHeader: 'Solo Project | Three Weeks',
