@@ -30,6 +30,10 @@ const AboutHeader = styled.h1`
   font-size: 1.5rem;
   letter-spacing: 1.1px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const AboutText = styled.p`
@@ -38,6 +42,10 @@ const AboutText = styled.p`
   line-height: 1.5;
   font-size: 1.25rem;
   margin-top: 1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const FavoriteText = styled.p`
@@ -54,6 +62,10 @@ const FavoriteText = styled.p`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -67,12 +79,18 @@ const TextWrapper = styled.div`
 const IconsWrapper = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 2rem;
+  width: 80%;
 `;
 const Icon = styled.img`
   width: 3.5rem;
   margin-left: 3rem;
+
+  @media screen and (max-width: 768px) {
+    width: 3rem;
+  }
 `;
 
 const AboutMainHeader = styled.h1`
@@ -98,63 +116,61 @@ const HobbiesWrapper = styled.div`
   margin-top: 2rem;
 `;
 const CodeWarsImg = styled.img`
-  width: 400px;
+  width: 350px;
 `;
 const LeetCodeImg = styled.img`
-  width: 250px;
+  width: 200px;
   margin-top: 1rem;
 `;
 
 const index = () => {
   return (
-    <>
-      <AboutContainer id="skills">
-        <Avatar src={avatar} />
+    <AboutContainer id="skills">
+      <Avatar src={avatar} />
 
-        <AboutMainHeader>Vova Ushenko</AboutMainHeader>
+      <AboutMainHeader>Vova Ushenko</AboutMainHeader>
 
-        <AboutHeader>Web Developer with excellent people skills</AboutHeader>
-        <IconsWrapper>
-          <Icon src={coding} style={{ margin: 0 }} />
-          <Icon src={ux} />
-          <Icon src={server} />
-          <Icon src={kindness} />
-          <Icon src={friendship} />
-        </IconsWrapper>
+      <AboutHeader>Web Developer with excellent people skills</AboutHeader>
+      <IconsWrapper>
+        <Icon src={coding} style={{ margin: 0 }} />
+        <Icon src={ux} />
+        <Icon src={server} />
+        <Icon src={kindness} />
+        <Icon src={friendship} />
+      </IconsWrapper>
 
-        <TextWrapper>
-          <AboutText>
-            Since the beginning of my fascinating journey as a web developer,
-            I've worked with various cool technologies to design and code
-            beautifully-simple, intuitive and clean interfaces.
-          </AboutText>
+      <TextWrapper>
+        <AboutText>
+          Since the beginning of my fascinating journey as a web developer, I've
+          worked with various cool technologies to design and code
+          beautifully-simple, intuitive and clean interfaces.
+        </AboutText>
 
-          <FavoriteText>
-            My favourite things are: coding, weightlifting, being nice to people
-            and solving cool problems on Codewars and LeetCode
-          </FavoriteText>
-        </TextWrapper>
-        <HobbiesWrapper>
-          <a
-            href="https://www.codewars.com/users/VovaCodes"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <CodeWarsImg
-              src="https://www.codewars.com/users/VovaCodes/badges/large"
-              alt="CodewarsStats"
-            />
-          </a>
-          <a
-            href="https://leetcode.com/vovaushenko/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <LeetCodeImg src={leetcode} alt="leetcode" />
-          </a>
-        </HobbiesWrapper>
-      </AboutContainer>
-    </>
+        <FavoriteText>
+          My favourite things are: coding, weightlifting, being nice to people
+          and solving cool problems on Codewars and LeetCode
+        </FavoriteText>
+      </TextWrapper>
+      <HobbiesWrapper>
+        <a
+          href="https://www.codewars.com/users/VovaCodes"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <CodeWarsImg
+            src="https://www.codewars.com/users/VovaCodes/badges/large"
+            alt="CodewarsStats"
+          />
+        </a>
+        <a
+          href="https://leetcode.com/vovaushenko/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <LeetCodeImg src={leetcode} alt="leetcode" />
+        </a>
+      </HobbiesWrapper>
+    </AboutContainer>
   );
 };
 

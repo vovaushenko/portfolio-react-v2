@@ -22,7 +22,8 @@ export const TechHeader = styled.h4`
   text-align: center;
   margin-bottom: 1rem;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
