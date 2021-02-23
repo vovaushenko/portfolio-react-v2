@@ -10,6 +10,8 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   padding: 5px;
   align-items: center;
+
+  margin-top: 2rem;
 `;
 
 // ************ Links Wrapper **************
@@ -66,6 +68,7 @@ export const FooterCopyright = styled.p`
   font-size: 1rem;
   letter-spacing: 1.1px;
   color: #01bf71;
+  margin-top: 1rem;
 `;
 
 export const FooterImageContainer = styled.div`
@@ -79,4 +82,10 @@ export const FooterCanada = styled.img`
 `;
 export const FooterLogo = styled.img`
   width: 40px;
+`;
+
+export const Divider = styled.div`
+  width: 450px;
+  height: 2px;
+  background: #01bf71;
 `;

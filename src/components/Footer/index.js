@@ -13,6 +13,7 @@ import {
   FooterImageContainer,
   FooterCanada,
   FooterLogo,
+  Divider,
 } from './FooterElements';
 
 import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
@@ -30,7 +31,11 @@ const Footer_new = () => {
         <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
         <FooterLogo src={logo} alt="My logo" />
       </FooterImageContainer>
+
       <FooterCopyright>Handcrafted by me &copy; 2021</FooterCopyright>
+
+      <Divider />
+
       <SocialLinksWrapper>
         <SocialIconLink href="https://github.com/vovaushenko" target="_blank">
           <FaGithub />
@@ -54,6 +59,9 @@ const Footer_new = () => {
           <FaDev />
         </SocialIconLink>
       </SocialLinksWrapper>
+
+      <Divider />
+
       <ToTopWrapper>
         <ToTop to="/" onClick={toggleHome}>
           <AiOutlineToTop />

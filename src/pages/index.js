@@ -32,6 +32,19 @@ p,input,textarea {
     background:#010606;
     color:#fff
  }
+::-webkit-scrollbar {
+  width:5px;
+  
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+::-webkit-scrollbar-thumb {
+  background:#01bf71;
+  border-radius:25px;
+}
+
  `;
 
 const Home = () => {
