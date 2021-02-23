@@ -30,12 +30,12 @@ export const SocialIconLink = styled.a`
   font-size: 1.3rem;
   padding: 0.5em;
   margin: 1rem 0.7rem;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50%;
 
   &:hover {
     color: #01bf71;
-    border: 1px solid #01bf71;
+    border: 2px solid #01bf71;
     transition: all 0.2s ease-in-out;
   }
 

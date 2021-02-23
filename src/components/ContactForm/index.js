@@ -227,7 +227,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <AvatarWrapper>
+      <AvatarWrapper id="footer">
         <StyledAvatar src={avatar} />
         <StyledHeader>Always happy to hear from you </StyledHeader>
         <ImageWrapper>

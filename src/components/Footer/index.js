@@ -26,7 +26,7 @@ const Footer_new = () => {
     scroll.scrollToTop();
   };
   return (
-    <FooterContainer id="footer">
+    <FooterContainer>
       <FooterImageContainer>
         <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
         <FooterLogo src={logo} alt="My logo" />

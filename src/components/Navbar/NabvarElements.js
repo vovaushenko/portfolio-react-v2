@@ -82,6 +82,8 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1.1px;
 
   &:active {
     border-bottom: 3px solid #01bf71;
