@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import {
   ArrowForward,
   ArrowRight,
+  Flag,
   HeroBg,
   HeroBtnWrapper,
   HeroContainer,
@@ -13,6 +14,7 @@ import {
 } from './HeroElements';
 import Video from '../../video/video.mp4';
 import { Button } from '../ButtonElement';
+import flag from '../../images/flag.png';
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -31,6 +33,7 @@ const HeroSection = () => {
           Glad to meet you! I'm Vova, an interactive web-developer currently
           based in Ottawa
         </HeroP>
+        <Flag src={flag} />
 
         <HeroBtnWrapper>
           <Button

@@ -110,7 +110,7 @@ export const HeroP = styled.p`
 // **********Hero P******************
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,4 +125,8 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const Flag = styled.img`
+  width: 3rem;
 `;
