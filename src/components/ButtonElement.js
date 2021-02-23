@@ -5,9 +5,9 @@ export const Button = styled(Link)`
   border-radius: 20px;
   background: ${({ primary }) => (primary ? '#01BF71' : '#010606')};
 
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   color: ${({ dark }) => (dark ? '#010606' : '#fff')};
-  font-size: ${({ fontBig }) => (fontBig ? '32px' : '22px')};
+  font-size: ${({ fontBig }) => (fontBig ? '1.5rem' : '22px')};
   outline: none;
   border: none;
   cursor: pointer;
@@ -83,5 +83,9 @@ export const Button = styled(Link)`
     100% {
       background-position: 0 0;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 `;

@@ -12,7 +12,8 @@ import {
   HeroP,
   VideoBg,
 } from './HeroElements';
-import Video from '../../video/video.mp4';
+
+import Video from '../../video/video-bg.mp4';
 import { Button } from '../ButtonElement';
 import flag from '../../images/flag.png';
 

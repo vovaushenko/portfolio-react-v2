@@ -7,6 +7,8 @@ const ProjectSection = styled.section`
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 const ProjectHeader = styled.h2`
@@ -14,12 +16,20 @@ const ProjectHeader = styled.h2`
   letter-spacing: 1.1px;
   color: #01bf71;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const ProjectDescription = styled.p`
   letter-spacing: 1.1px;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const index = () => {

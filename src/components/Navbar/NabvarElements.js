@@ -34,9 +34,6 @@ export const NavbarContainer = styled.div`
 // ************ LOGO ***********************
 export const NavLogo = styled(LinkRouter)`
   cursor: pointer;
-  &:hover {
-    color: #01bf71;
-  }
 `;
 
 // ************ Mobile Icons ***********************
@@ -62,6 +59,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin-right: 4rem;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -98,5 +96,5 @@ export const NavLinks = styled(LinkScroll)`
 // ************Nav Avatar*************************
 export const NavAvatar = styled.img`
   margin-left: 1rem;
-  width: 60px;
+  width: 50px;
 `;

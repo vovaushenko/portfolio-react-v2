@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
 }
 p,input,textarea {
     font-family: 'Poppins', sans-serif;
+    opacity: 0.9;
 }
 
  

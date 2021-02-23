@@ -88,4 +88,8 @@ export const Divider = styled.div`
   width: 450px;
   height: 2px;
   background: #01bf71;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
 `;

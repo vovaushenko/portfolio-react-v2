@@ -45,6 +45,7 @@ const AboutText = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
+    text-align: center;
   }
 `;
 

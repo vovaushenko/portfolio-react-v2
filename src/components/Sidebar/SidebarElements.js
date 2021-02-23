@@ -17,9 +17,9 @@ export const SidebarContainer = styled.aside`
   transition: 0.4s ease-in-out;
 
   /* glass effect */
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(1, 191, 113, 0.1);
   backdrop-filter: blur(20px);
-
+  -webkit-backdrop-filter: blur(20px);
   /* toggle visibility */
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -30,13 +30,18 @@ export const Icon = styled.div`
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   outline: none;
 `;
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 // **************Sidebar Wrapper****************
@@ -63,7 +68,7 @@ export const SidebarLink = styled(LinkScroll)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
