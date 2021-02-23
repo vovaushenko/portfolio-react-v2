@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ContactForm from '../components/ContactForm';
+
 import {
   projectFour,
   projectOne,
@@ -15,6 +16,7 @@ import Project from '../components/Project';
 import Footer from '../components/Footer';
 import About from '../components/About';
 import ProjectHeader from '../components/ProjectHeader';
+import Loading from '../components/Loading';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -50,14 +52,24 @@ p,input,textarea {
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <GlobalStyle />
+
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -68,9 +80,7 @@ const Home = () => {
       <Project {...projectTwo} />
       <Project {...projectThree} />
       <Project {...projectFour} />
-
       <ContactForm />
-
       <Footer />
     </>
   );
