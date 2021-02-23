@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
-import { WaveSpinner } from 'react-spinners-kit';
+import { RotateSpinner } from 'react-spinners-kit';
 import avatar from '../../images/avatar.png';
+import email from '../../images/open-email.png';
+import phone from '../../images/conversation.png';
 
 const sharedStyles = css`
   background-color: #010606;
@@ -23,6 +25,7 @@ const StyledFormWrapper = styled.div`
 
   h2 {
     text-align: center;
+    color: #01bf71;
   }
 `;
 
@@ -142,6 +145,19 @@ const StyledAvatar = styled.img`
   width: 150px;
 `;
 
+const ImageWrapper = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+`;
+
+const Email = styled.img`
+  width: 50px;
+  margin-right: 3rem;
+`;
+const Contact = styled.img`
+  width: 50px;
+`;
+
 const AvatarWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -150,9 +166,11 @@ const AvatarWrapper = styled.div`
   text-align: center;
 `;
 const StyledHeader = styled.h2`
-  margin: 2rem 0;
   letter-spacing: 1.1px;
+  margin-top: 1rem;
+  color: #01bf71;
 `;
+
 const initialState = {
   name: '',
   email: '',
@@ -212,6 +230,10 @@ const ContactForm = () => {
       <AvatarWrapper>
         <StyledAvatar src={avatar} />
         <StyledHeader>Always happy to hear from you </StyledHeader>
+        <ImageWrapper>
+          <Email src={email} />
+          <Contact src={phone} />
+        </ImageWrapper>
       </AvatarWrapper>
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
@@ -289,7 +311,7 @@ const ContactForm = () => {
           )}
           {loading && (
             <StyledLoading>
-              <WaveSpinner size={50} color="#01bf71" />
+              <RotateSpinner size={50} color="#01bf71" />
             </StyledLoading>
           )}
 
