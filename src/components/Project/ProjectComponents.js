@@ -139,41 +139,17 @@ export const ProjectGitHubLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  width: 7rem;
+  max-width: 120px;
   font-size: 1rem;
   font-weight: 700;
 
   color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#010606')};
   background-color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 
-  border-radius: 50px;
+  border-radius: 6px;
   text-decoration: none;
   margin: 1rem;
-  padding: 0.5em;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background-color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
-  }
-`;
-export const ProjectLiveLink = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  width: 7rem;
-  font-size: 1rem;
-  font-weight: 700;
-
-  color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#010606')};
-  background-color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
-
-  border-radius: 50px;
-  text-decoration: none;
-  margin: 1rem;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -240,13 +216,13 @@ export const StyledComponentsIcon = styled(SiStyledComponents)`
 `;
 // *************** ButtonIcon ******************
 export const ButtonGitIcon = styled(FaGithub)`
-  margin-right: 10px;
-  font-size: 20px;
+  margin-right: 5px;
+  font-size: 1rem;
 
   color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#000')};
 `;
 export const ButtonLiveIcon = styled(FiMonitor)`
-  margin-right: 10px;
-  font-size: 20px;
+  margin-right: 5px;
+  font-size: 1rem;
   color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#000')};
 `;

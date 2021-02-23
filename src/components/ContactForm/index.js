@@ -77,11 +77,11 @@ const StyledButton = styled.button`
   display: block;
   background-color: #01bf71;
   color: #010606;
-  font-family: 'Poppins', sans-serif;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
   border: 0;
-  border-radius: 50px;
+  border-radius: 6px;
   height: 40px;
   padding: 0 2rem;
   cursor: pointer;

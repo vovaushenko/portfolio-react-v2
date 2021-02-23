@@ -19,7 +19,6 @@ import {
   ProjectRigthColumn,
   ProjectSubHeader,
   ProjectGitHubLink,
-  ProjectLiveLink,
   ButtonGitIcon,
   ButtonLiveIcon,
   ProjectLinkWrapper,
@@ -27,8 +26,6 @@ import {
   ProjectDotsContainer,
   ProjectDot,
 } from './ProjectComponents';
-
-// https://www.lauracharvey.dev/
 
 const Project = ({
   reverse,
@@ -99,14 +96,14 @@ const Project = ({
                 GitHub
               </ProjectGitHubLink>
 
-              <ProjectLiveLink
+              <ProjectGitHubLink
                 lightmode={+lightmode}
                 href={liveUrl}
                 target="_blank"
               >
                 <ButtonLiveIcon lightmode={+lightmode} />
-                Live
-              </ProjectLiveLink>
+                  Live  
+              </ProjectGitHubLink>
             </ProjectLinkWrapper>
           </ProjectRigthColumn>
         </ProjectContainer>
