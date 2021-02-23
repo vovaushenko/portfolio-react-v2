@@ -1,5 +1,7 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import CanadaFlag from '../../images/canada.png';
+import logo from '../../images/Logo.png';
 
 import {
   FooterContainer,
@@ -8,6 +10,9 @@ import {
   SocialLinksWrapper,
   ToTop,
   ToTopWrapper,
+  FooterImageContainer,
+  FooterCanada,
+  FooterLogo,
 } from './FooterElements';
 
 import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
@@ -21,6 +26,10 @@ const Footer_new = () => {
   };
   return (
     <FooterContainer id="footer">
+      <FooterImageContainer>
+        <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
+        <FooterLogo src={logo} alt="My logo" />
+      </FooterImageContainer>
       <FooterCopyright>Handcrafted by me &copy; 2021</FooterCopyright>
       <SocialLinksWrapper>
         <SocialIconLink href="https://github.com/vovaushenko" target="_blank">

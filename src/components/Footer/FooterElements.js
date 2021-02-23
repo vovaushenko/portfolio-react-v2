@@ -67,3 +67,16 @@ export const FooterCopyright = styled.p`
   letter-spacing: 1.1px;
   color: #01bf71;
 `;
+
+export const FooterImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const FooterCanada = styled.img`
+  width: 40px;
+  margin-right: 1rem;
+`;
+export const FooterLogo = styled.img`
+  width: 40px;
+`;
