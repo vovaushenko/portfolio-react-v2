@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
 import { FaReact, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiFirebase, SiJavascript, SiRedux, SiMongodb } from 'react-icons/si';
+import {
+  SiFirebase,
+  SiJavascript,
+  SiRedux,
+  SiMongodb,
+  SiStyledComponents,
+  SiGoogle,
+} from 'react-icons/si';
 import { FiMonitor } from 'react-icons/fi';
 // *************** Project Wrap ******************
-export const ProjectWrap = styled.div`
+export const ProjectWrap = styled.section`
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -114,8 +121,8 @@ export const ProjectDescription = styled.p`
 // *************** Icons  Container ******************
 export const ProjectIcons = styled.div`
   display: flex;
-  width: 40%;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 `;
 
 // *************** Link WRAPPER ******************
@@ -217,6 +224,18 @@ export const MongoIcon = styled(SiMongodb)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
+`;
+export const GoogleIcon = styled(SiGoogle)`
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  margin-left: 8px;
+  font-size: 24px;
+  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
+`;
+export const StyledComponentsIcon = styled(SiStyledComponents)`
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  margin-left: 8px;
+  font-size: 45px;
   color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
 `;
 // *************** ButtonIcon ******************

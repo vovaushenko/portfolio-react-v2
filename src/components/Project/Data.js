@@ -16,11 +16,7 @@ export const projectOne = {
   gitUrl: 'https://github.com/vovaushenko/Coffee-Shop-MERN',
   liveUrl: 'https://coffeeshopmernapp.herokuapp.com/',
 
-  darkText: false,
   isVisibleReact: true,
-  isVisibleCss: false,
-  isVisibleFireBase: false,
-  isVisibleJS: false,
   isVisibleNode: true,
   isVisibleRedux: true,
   isVisibleMongo: true,
@@ -31,7 +27,7 @@ export const projectTwo = {
   lightmode: false,
 
   header: 'LinkedIn Clone',
-  subHeader: 'Solo Project | One Week',
+  subHeader: 'Solo Project',
   description: `The LinkedIn-clone web application presents a custom LinkedIn-clone.
   The APP is created with the latest industry standards using React.js and Redux Toolkit
   Firebase is used for the backend
@@ -42,10 +38,9 @@ export const projectTwo = {
   liveUrl: 'https://linkedin-clone-v1.web.app/',
 
   isVisibleReact: true,
+  isVisibleRedux: true,
   isVisibleCss: true,
   isVisibleFireBase: true,
-  isVisibleJS: true,
-  isVisibleNode: false,
 };
 export const projectThree = {
   id: '',
@@ -53,7 +48,7 @@ export const projectThree = {
   lightmode: false,
 
   header: 'RNTL Real Estate',
-  subHeader: 'Solo Project | One Week',
+  subHeader: 'Solo Project',
   description: ` The RNTL web application presents a custom real estate web app.
   The App is created with the use of React.js and 
   React styled components.
@@ -64,10 +59,7 @@ export const projectThree = {
   liveUrl: 'https://rntl-rntl.netlify.app/',
 
   isVisibleReact: true,
-  isVisibleCss: true,
-  isVisibleFireBase: true,
-  isVisibleJS: true,
-  isVisibleNode: false,
+  isVisibleStyledComponents: true,
 };
 export const projectFour = {
   id: '',
@@ -75,7 +67,7 @@ export const projectFour = {
   lightmode: false,
 
   header: 'Google Search Clone',
-  subHeader: 'Solo Project | Three Weeks',
+  subHeader: 'Solo Project',
   description: `A Google Search Clone that is built using React, Firebase and Google search api.`,
   img: project4,
   alt: 'Google Search',
@@ -85,6 +77,5 @@ export const projectFour = {
   isVisibleReact: true,
   isVisibleCss: true,
   isVisibleFireBase: true,
-  isVisibleJS: true,
-  isVisibleNode: false,
+  isVisibleGoogle: true,
 };
