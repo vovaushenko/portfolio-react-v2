@@ -10,9 +10,9 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
+  NavAvatar,
 } from './NabvarElements';
+import logo from '../../images/Logo.png';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              VU
+              <NavAvatar src={logo} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -95,10 +95,7 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
             </NavMenu>
-
-            <NavBtn>
-              <NavBtnLink to="/contact">Contact</NavBtnLink>
-            </NavBtn>
+            <p></p>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

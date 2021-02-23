@@ -33,16 +33,7 @@ export const NavbarContainer = styled.div`
 
 // ************ LOGO ***********************
 export const NavLogo = styled(LinkRouter)`
-  color: #fff;
-  justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: 'Bodoni Moda', serif;
-
   &:hover {
     color: #01bf71;
   }
@@ -71,7 +62,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -103,35 +93,8 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-// *************NavBtn(wrapper for button)*****************
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-// ************NavBtn Link*************************
-
-export const NavBtnLink = styled(LinkRouter)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  transition: all 0.2s ease-ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
+// ************Nav Avatar*************************
+export const NavAvatar = styled.img`
+  margin-left: 1rem;
+  width: 60px;
 `;
