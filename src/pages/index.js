@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { GlobalStyle } from '../GlobalStyle';
+
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -17,38 +18,7 @@ import Footer from '../components/Footer';
 import About from '../components/About';
 import ProjectHeader from '../components/ProjectHeader';
 import Loading from '../components/Loading';
-
-const GlobalStyle = createGlobalStyle`
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-p,input,textarea {
-    font-family: 'Poppins', sans-serif;
-    opacity: 0.9;
-}
-
- 
- body {
-    font-family: 'Poppins', sans-serif;
-    background:#010606;
-    color:#fff
- }
-::-webkit-scrollbar {
-  width:5px;
-  
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-
-}
-::-webkit-scrollbar-thumb {
-  background:#01bf71;
-  border-radius:25px;
-}
-
- `;
+import Cursor from '../components/Cursor';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +29,9 @@ const Home = () => {
   };
 
   useEffect(() => {
-    setIsLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
   }, []);
 
   if (isLoading) {
@@ -69,7 +41,7 @@ const Home = () => {
   return (
     <>
       <GlobalStyle />
-
+      <Cursor />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />

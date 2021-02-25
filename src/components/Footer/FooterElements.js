@@ -26,16 +26,16 @@ export const SocialIconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #01bf71;
   font-size: 1.3rem;
   padding: 0.5em;
   margin: 1rem 0.7rem;
-  border: 2px solid white;
+  border: 2px solid #01bf71;
   border-radius: 50%;
 
   &:hover {
-    color: #01bf71;
-    border: 2px solid #01bf71;
+    color: #fff;
+    border: 2px solid #fff;
     transition: all 0.2s ease-in-out;
   }
 
@@ -50,7 +50,7 @@ export const ToTopWrapper = styled.div`
 `;
 
 export const ToTop = styled(Link)`
-  color: #fff;
+  color: #01bf71;
   cursor: pointer;
   text-decoration: none;
   font-size: 2.5rem;
@@ -58,7 +58,7 @@ export const ToTop = styled(Link)`
   align-items: center;
 
   &:hover {
-    color: #01bf71;
+    color: #fff;
     transform: translateY(-10px);
     transition: all 0.6s ease-in-out;
   }
