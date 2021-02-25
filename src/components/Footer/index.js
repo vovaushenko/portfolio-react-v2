@@ -8,8 +8,6 @@ import {
   FooterCopyright,
   SocialIconLink,
   SocialLinksWrapper,
-  ToTop,
-  ToTopWrapper,
   FooterImageContainer,
   FooterCanada,
   FooterLogo,
@@ -17,8 +15,6 @@ import {
 } from './FooterElements';
 
 import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
-
-import { AiOutlineToTop } from 'react-icons/ai';
 import { SiCodewars } from 'react-icons/si';
 
 const Footer_new = () => {
@@ -29,7 +25,7 @@ const Footer_new = () => {
     <FooterContainer>
       <FooterImageContainer>
         <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
-        <FooterLogo src={logo} alt="My logo" />
+        <FooterLogo src={logo} alt="My logo" onClick={toggleHome} />
       </FooterImageContainer>
 
       <FooterCopyright>Handcrafted by me &copy; 2021</FooterCopyright>
