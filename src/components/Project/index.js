@@ -65,6 +65,7 @@ const Project = ({
             <ProjectSubHeader lightmode={+lightmode}>
               {subHeader}
             </ProjectSubHeader>
+
             <ProjectIcons>
               <ReactIcon visible={+isVisibleReact} lightmode={+lightmode} />
               <CssIcon visible={+isVisibleCss} lightmode={+lightmode} />

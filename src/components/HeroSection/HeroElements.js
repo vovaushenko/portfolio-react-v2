@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 2rem;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -55,7 +55,7 @@ export const HeroH1 = styled.h1`
   color: #01bf71;
   font-size: 2.5rem;
   text-align: center;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.5px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 
@@ -71,12 +71,10 @@ export const HeroH1 = styled.h1`
 // **********Hero P******************
 
 export const HeroP = styled.p`
-  margin-top: 1rem;
   color: #fff;
   opacity: 0.8;
   font-size: 1.5rem;
   text-align: center;
-  letter-spacing: 1.1px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 
@@ -107,7 +105,6 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
-
 export const Flag = styled.img`
-  width: 3rem;
+  width: 2.5rem;
 `;

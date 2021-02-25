@@ -97,25 +97,30 @@ export const ProjectRigthColumn = styled.div`
 // *************** Typography ******************
 
 export const ProjectHeader = styled.h2`
-  color: ${({ lightmode }) => (lightmode ? '#010606' : '#01bf71')};
+  background-color: #01bf71;
+  background-image: linear-gradient(
+    45deg,
+    #01bf71 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 1.1px;
   font-size: 2rem;
-  margin-top: 1rem;
 `;
 export const ProjectSubHeader = styled.p`
   color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
-  margin: 1rem 0;
-  letter-spacing: 1.1px;
+  @media screen and (max-width: 500px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 export const ProjectDescription = styled.p`
   color: ${({ lightmode }) => (lightmode ? '#010606' : '#f9f9f9')};
-  width: 90%;
-  margin: 1rem 0;
-  font-size: 14px;
-  letter-spacing: 1.1px;
-
+  width: 80%;
+  text-align: justify;
   @media screen and (max-width: 500px) {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 `;
 // *************** Icons  Container ******************
@@ -123,6 +128,11 @@ export const ProjectIcons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 // *************** Link WRAPPER ******************
@@ -140,7 +150,6 @@ export const ProjectGitHubLink = styled.a`
   align-items: center;
   justify-content: center;
   max-width: 120px;
-  font-size: 1rem;
   font-weight: 700;
 
   color: ${({ lightmode }) => (lightmode ? '#f9f9f9' : '#010606')};

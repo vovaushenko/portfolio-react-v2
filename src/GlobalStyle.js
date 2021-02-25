@@ -23,12 +23,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Russo One', sans-serif;
   margin-bottom:1rem;
+  @media screen and (max-width: 500px) {
+    margin-bottom:0.5rem;
+  }
  
 }
 p {
   margin-bottom: 1rem;
+  letter-spacing: 1.1px;
+  @media screen and (max-width: 500px) {
+    margin-bottom:0.5rem;
+  }
 }
 
 ul {
@@ -37,6 +43,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: rgba(255,255,255,0.9);
 }
 
 img {

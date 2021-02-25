@@ -44,26 +44,6 @@ export const SocialIconLink = styled.a`
   }
 `;
 
-// ************To Top Wrapper***********
-export const ToTopWrapper = styled.div`
-  display: flex;
-`;
-
-export const ToTop = styled(Link)`
-  color: #01bf71;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: #fff;
-    transform: translateY(-10px);
-    transition: all 0.6s ease-in-out;
-  }
-`;
-
 export const FooterCopyright = styled.p`
   font-size: 1rem;
   letter-spacing: 1.1px;

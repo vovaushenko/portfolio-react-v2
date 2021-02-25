@@ -14,16 +14,24 @@ export const TechContainer = styled.section`
 
 // *****************Tech Header*******************
 
-export const TechHeader = styled.h4`
-  color: ${({ lightMode }) => (lightMode ? '#010606' : '#01bf71')};
-  font-size: 1.5rem;
+export const TechHeader = styled.h2`
+  font-size: 2rem;
   letter-spacing: 1.1px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
-  margin-bottom: 1rem;
+
+  background-color: #01bf71;
+  background-image: linear-gradient(
+    45deg,
+    #01bf71 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -40,9 +48,6 @@ export const TechWrapper = styled.div`
 //************TechWrapper******************
 
 export const TechSubHeader = styled.p`
-  letter-spacing: 1.1px;
-  font-size: 1rem;
-
   @media screen and (max-width: 500px) {
     font-size: 0.7rem;
   }
@@ -56,8 +61,6 @@ export const TechCard = styled.a`
   align-items: center;
   padding: 1em;
   transition: all 0.4s ease-in-out;
-  text-decoration: none;
-  color: #fff;
 
   &:hover {
     transform: translateY(-15px);

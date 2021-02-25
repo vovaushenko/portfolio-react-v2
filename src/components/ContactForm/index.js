@@ -145,19 +145,6 @@ const StyledAvatar = styled.img`
   width: 150px;
 `;
 
-const ImageWrapper = styled.div`
-  display: flex;
-  margin-bottom: 1rem;
-`;
-
-const Email = styled.img`
-  width: 50px;
-  margin-right: 3rem;
-`;
-const Contact = styled.img`
-  width: 50px;
-`;
-
 const AvatarWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -230,10 +217,6 @@ const ContactForm = () => {
       <AvatarWrapper id="footer">
         <StyledAvatar src={avatar} />
         <StyledHeader>Always happy to hear from you </StyledHeader>
-        <ImageWrapper>
-          <Email src={email} />
-          <Contact src={phone} />
-        </ImageWrapper>
       </AvatarWrapper>
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>

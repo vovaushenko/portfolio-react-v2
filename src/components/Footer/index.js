@@ -61,12 +61,6 @@ const Footer_new = () => {
       </SocialLinksWrapper>
 
       <Divider />
-
-      <ToTopWrapper>
-        <ToTop to="/" onClick={toggleHome}>
-          <AiOutlineToTop />
-        </ToTop>
-      </ToTopWrapper>
     </FooterContainer>
   );
 };

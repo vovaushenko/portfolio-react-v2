@@ -8,28 +8,26 @@ import kindness from '../../images/kindness.png';
 import friendship from '../../images/friend.png';
 import leetcode from '../../images/1280px-LeetCode_Logo_black_with_text.svg.png';
 
-const AboutContainer = styled.main`
+const AboutContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   width: 90%;
-  margin: 0 auto;
-  padding-top: 3rem;
+  margin: 1rem auto;
 `;
 
 const Avatar = styled.img`
   width: 150px;
+  object-fit: cover;
 `;
 
 const AboutHeader = styled.h1`
   color: #01bf71;
-  margin: 1rem 0;
-
   font-size: 1.5rem;
   letter-spacing: 1.1px;
   text-align: center;
+  margin-bottom: 1.5rem;
 
   @media screen and (max-width: 768px) {
     font-size: 1.25rem;
@@ -40,12 +38,10 @@ const AboutText = styled.p`
   text-align: center;
   letter-spacing: 1.1px;
   line-height: 1.5;
-  font-size: 1.25rem;
-  margin-top: 1rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    text-align: center;
+    font-size: 0.75rem;
+    text-align: justify;
   }
 `;
 
@@ -66,14 +62,15 @@ const FavoriteText = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 0.75rem;
+    text-align: justify;
+    word-break: break-all;
   }
 `;
 
 const TextWrapper = styled.div`
-  width: 90%;
-
-  @media (min-width: 650px) {
-    width: 70%;
+  width: 70%;
+  @media screen and (max-width: 768px) {
+    width: 90%;
   }
 `;
 
@@ -82,21 +79,21 @@ const IconsWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 2rem;
-  width: 80%;
+  margin-bottom: 1rem;
+  width: 90%;
 `;
 const Icon = styled.img`
   width: 3.5rem;
   margin-left: 3rem;
 
   @media screen and (max-width: 768px) {
-    width: 3rem;
+    width: 2.5rem;
+    margin-left: 1rem;
   }
 `;
 
 const AboutMainHeader = styled.h1`
   font-size: 2.5rem;
-  letter-spacing: 1.1px;
   background-color: #01bf71;
   background-image: linear-gradient(
     45deg,
@@ -104,9 +101,12 @@ const AboutMainHeader = styled.h1`
     #2bd2ff 52%,
     #2bff88 90%
   );
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const HobbiesWrapper = styled.div`
@@ -114,7 +114,6 @@ const HobbiesWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 2rem;
 `;
 const CodeWarsImg = styled.img`
   width: 350px;
