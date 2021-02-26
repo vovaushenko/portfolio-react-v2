@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
 import { RotateSpinner } from 'react-spinners-kit';
-import avatar from '../../images/avatar.png';
-import email from '../../images/open-email.png';
-import phone from '../../images/conversation.png';
+import avatar from '../../images/avatar.svg';
 
 const sharedStyles = css`
   background-color: #010606;

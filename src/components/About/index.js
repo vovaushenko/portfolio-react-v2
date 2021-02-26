@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import avatar from '../../images/avatar.png';
+import avatar from '../../images/avatar.svg';
 import server from '../../images/servers.png';
 import coding from '../../images/code.png';
 import ux from '../../images/ux-interface.png';
