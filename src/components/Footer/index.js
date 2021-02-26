@@ -37,7 +37,7 @@ const Footer_new = () => {
           <FaGithub />
         </SocialIconLink>
         <SocialIconLink
-          href="https://www.codewars.com/users/RampCV"
+          href="https://www.codewars.com/users/VovaCodes"
           target="_blank"
         >
           <SiCodewars />

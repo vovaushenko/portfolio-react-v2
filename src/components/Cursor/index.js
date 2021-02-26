@@ -4,11 +4,11 @@ const Cursor = () => {
   return (
     <AnimatedCursor
       innerSize={10}
-      outerSize={14}
-      color="1, 191, 113"
+      outerSize={16}
+      color="250, 30, 14"
       outerAlpha={0.2}
       innerScale={0.4}
-      outerScale={3.5}
+      outerScale={3}
     />
   );
 };
