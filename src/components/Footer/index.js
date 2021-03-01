@@ -33,25 +33,39 @@ const Footer_new = () => {
       <Divider />
 
       <SocialLinksWrapper>
-        <SocialIconLink href="https://github.com/vovaushenko" target="_blank">
+        <SocialIconLink
+          href="https://github.com/vovaushenko"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub />
         </SocialIconLink>
         <SocialIconLink
           href="https://www.codewars.com/users/VovaCodes"
           target="_blank"
+          rel="noreferrer"
         >
           <SiCodewars />
         </SocialIconLink>
         <SocialIconLink
           href="https://www.linkedin.com/in/volodymyr-ushenko-5087a87b/"
           target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin />
         </SocialIconLink>
-        <SocialIconLink href="//www.twitter.com/Vova79605562" target="_blank">
+        <SocialIconLink
+          href="//www.twitter.com/Vova79605562"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaTwitter />
         </SocialIconLink>
-        <SocialIconLink href="https://dev.to/vovaushenko" target="_blank">
+        <SocialIconLink
+          href="https://dev.to/vovaushenko"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaDev />
         </SocialIconLink>
       </SocialLinksWrapper>

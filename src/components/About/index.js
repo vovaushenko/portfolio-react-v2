@@ -126,17 +126,17 @@ const LeetCodeImg = styled.img`
 const index = () => {
   return (
     <AboutContainer id="skills">
-      <Avatar src={avatar} />
+      <Avatar src={avatar} alt="Friendly avatar" />
 
       <AboutMainHeader>Vova Ushenko</AboutMainHeader>
 
       <AboutHeader>Web Developer with excellent people skills</AboutHeader>
       <IconsWrapper>
-        <Icon src={coding} style={{ margin: 0 }} />
-        <Icon src={ux} />
-        <Icon src={server} />
-        <Icon src={kindness} />
-        <Icon src={friendship} />
+        <Icon src={coding} style={{ margin: 0 }} alt="programming" />
+        <Icon src={ux} alt="ui/ux" />
+        <Icon src={server} alt="backend development" />
+        <Icon src={kindness} alt="kindness" />
+        <Icon src={friendship} alt="empathy" />
       </IconsWrapper>
 
       <TextWrapper>

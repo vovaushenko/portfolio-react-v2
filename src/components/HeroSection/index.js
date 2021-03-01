@@ -26,7 +26,14 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={Video}
+          type="video/mp4"
+          alt="Vide Background"
+        />
       </HeroBg>
       <HeroContent>
         <HeroH1>Hi there! 👋</HeroH1>
@@ -34,7 +41,7 @@ const HeroSection = () => {
           Glad to meet you! I'm Vova, an interactive web-developer currently
           based in Ottawa
         </HeroP>
-        <Flag src={flag} />
+        <Flag src={flag} alt="the Maple Leaf Flag" />
 
         <HeroBtnWrapper>
           <Button

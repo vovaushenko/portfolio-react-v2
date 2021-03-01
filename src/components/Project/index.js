@@ -57,7 +57,7 @@ const Project = ({
         </ProjectDotsContainer>
         <ProjectContainer id={id} reverse={+reverse} lightmode={+lightmode}>
           <ProjectLeftColumn>
-            <ProjectImage src={img} />
+            <ProjectImage src={img} alt="project image" />
           </ProjectLeftColumn>
 
           <ProjectRigthColumn>
@@ -92,6 +92,7 @@ const Project = ({
                 lightmode={+lightmode}
                 href={gitUrl}
                 target="_blank"
+                rel="noreferrer"
               >
                 <ButtonGitIcon lightmode={+lightmode} />
                 GitHub
@@ -101,6 +102,7 @@ const Project = ({
                 lightmode={+lightmode}
                 href={liveUrl}
                 target="_blank"
+                rel="noreferrer"
               >
                 <ButtonLiveIcon lightmode={+lightmode} />
                   Live  

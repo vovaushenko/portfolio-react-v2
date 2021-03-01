@@ -213,7 +213,7 @@ const ContactForm = () => {
   return (
     <>
       <AvatarWrapper id="footer">
-        <StyledAvatar src={avatar} />
+        <StyledAvatar src={avatar} alt="friendly avatar" />
         <StyledHeader>Always happy to hear from you </StyledHeader>
       </AvatarWrapper>
       <StyledFormWrapper>
