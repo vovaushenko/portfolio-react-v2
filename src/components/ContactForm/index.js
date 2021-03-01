@@ -219,25 +219,29 @@ const ContactForm = () => {
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
           <h2>Connect With Me 👋</h2>
-          <label htmlFor="name">Name</label>
-          <StyledInput
-            type="text"
-            name="name"
-            value={state.name}
-            onChange={handleInput}
-          />
+          <label htmlFor="name">
+            Name
+            <StyledInput
+              type="text"
+              name="name"
+              value={state.name}
+              onChange={handleInput}
+            />
+          </label>
 
-          <label htmlFor="email">Email</label>
-          <StyledInput
-            type="email"
-            name="email"
-            //TODO:regex validation pattern=""
-            value={state.email}
-            onChange={handleInput}
-          />
+          <label htmlFor="email">
+            Email
+            <StyledInput
+              type="email"
+              name="email"
+              //TODO:regex validation pattern=""
+              value={state.email}
+              onChange={handleInput}
+            />
+          </label>
           <StyledFieldset>
             <legend>Subject</legend>
-            <label>
+            <label htmlFor="personal">
               <input
                 type="radio"
                 value="personal"
@@ -247,7 +251,7 @@ const ContactForm = () => {
               />
               Personal
             </label>
-            <label>
+            <label htmlFor="ecommerce">
               <input
                 type="radio"
                 value="ecommerce"
@@ -257,7 +261,7 @@ const ContactForm = () => {
               />
               E-commerce
             </label>
-            <label>
+            <label htmlFor="landing">
               <input
                 type="radio"
                 value="landing"
@@ -267,7 +271,7 @@ const ContactForm = () => {
               />
               Landing Page
             </label>
-            <label>
+            <label htmlFor="cooperation">
               <input
                 type="radio"
                 value="cooperation"
@@ -278,12 +282,14 @@ const ContactForm = () => {
               Cooperation
             </label>
           </StyledFieldset>
-          <label htmlFor="message">Message</label>
-          <StyledTextArea
-            name="message"
-            value={state.message}
-            onChange={handleInput}
-          />
+          <label htmlFor="message">
+            Message
+            <StyledTextArea
+              name="message"
+              value={state.message}
+              onChange={handleInput}
+            />
+          </label>
 
           {error && (
             <StyledError>

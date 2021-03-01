@@ -37,6 +37,7 @@ const Footer_new = () => {
           href="https://github.com/vovaushenko"
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub"
         >
           <FaGithub />
         </SocialIconLink>
@@ -44,6 +45,7 @@ const Footer_new = () => {
           href="https://www.codewars.com/users/VovaCodes"
           target="_blank"
           rel="noreferrer"
+          aria-label="Code Wars"
         >
           <SiCodewars />
         </SocialIconLink>
@@ -51,6 +53,7 @@ const Footer_new = () => {
           href="https://www.linkedin.com/in/volodymyr-ushenko-5087a87b/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <FaLinkedin />
         </SocialIconLink>
@@ -58,6 +61,7 @@ const Footer_new = () => {
           href="//www.twitter.com/Vova79605562"
           target="_blank"
           rel="noreferrer"
+          aria-label="Twitter"
         >
           <FaTwitter />
         </SocialIconLink>
@@ -65,6 +69,7 @@ const Footer_new = () => {
           href="https://dev.to/vovaushenko"
           target="_blank"
           rel="noreferrer"
+          aria-label="Dev.to"
         >
           <FaDev />
         </SocialIconLink>

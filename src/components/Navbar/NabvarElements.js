@@ -54,7 +54,7 @@ export const MobileIcon = styled.div`
 
 // ************ Nav Menu ***********************
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   list-style: none;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
 `;
 
 // ************ Nav Item ***********************
-export const NavItem = styled.li`
+export const NavItem = styled.div`
   height: 80px;
 `;
 

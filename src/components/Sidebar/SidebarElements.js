@@ -51,7 +51,7 @@ export const SidebarWrapper = styled.div`
 `;
 
 // **************Sidebar Menu****************
-export const SidebarMenu = styled.ul`
+export const SidebarMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
