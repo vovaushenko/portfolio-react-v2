@@ -2,6 +2,7 @@ import project1 from '../../images/projects/coffeeshop-mern.png';
 import project2 from '../../images/projects/linkedin-clone.png';
 import project3 from '../../images/projects/rntls.png';
 import project4 from '../../images/projects/Google-search-clone.png';
+import project5 from '../../images/projects/Portfolio.png';
 
 export const projectOne = {
   id: '',
@@ -23,7 +24,7 @@ export const projectOne = {
 };
 export const projectTwo = {
   id: '',
-  reverse: true,
+  reverse: false,
   lightmode: false,
 
   header: 'LinkedIn Clone',
@@ -78,4 +79,21 @@ export const projectFour = {
   isVisibleCss: true,
   isVisibleFireBase: true,
   isVisibleGoogle: true,
+};
+export const projectFive = {
+  id: '',
+  reverse: true,
+  lightmode: false,
+
+  header: 'Portfolio Web App',
+  subHeader: 'Solo Project',
+  description: `This is my personal portfolio built with React, Context API & Styled Components. Its main purpose is to uniquely showcase not only my developer and design skills, but also express my personality, experience and capabilities`,
+  img: project5,
+  alt: 'Portfolio Web App',
+  gitUrl: 'https://github.com/vovaushenko/portfolio-react-v2',
+  liveUrl: 'https://vovaushenko.dev/',
+
+  isVisibleReact: true,
+  isVisibleCss: true,
+  isVisibleRedux: true,
 };

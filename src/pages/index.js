@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection';
 import ContactForm from '../components/ContactForm';
 
 import {
+  projectFive,
   projectFour,
   projectOne,
   projectThree,
@@ -49,9 +50,10 @@ const Home = () => {
       <Tech />
       <ProjectHeader />
       <Project {...projectOne} />
-      <Project {...projectTwo} />
+      <Project {...projectFive} />
       <Project {...projectThree} />
       <Project {...projectFour} />
+      <Project {...projectTwo} />
       <ContactForm />
       <Footer />
     </>
