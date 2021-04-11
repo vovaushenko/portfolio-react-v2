@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 // ************ Footer Container **************
 
 export const FooterContainer = styled.footer`
-  background: #010606;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

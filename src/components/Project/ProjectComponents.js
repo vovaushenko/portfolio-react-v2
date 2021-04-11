@@ -110,14 +110,12 @@ export const ProjectHeader = styled.h2`
   font-size: 2rem;
 `;
 export const ProjectSubHeader = styled.p`
-  color: ${({ lightmode }) => (lightmode ? '#01bf71' : '#fff')};
   @media screen and (max-width: 500px) {
     margin-bottom: 0.5rem;
   }
 `;
 export const ProjectDescription = styled.p`
-  color: ${({ lightmode }) => (lightmode ? '#010606' : '#f9f9f9')};
-  width: 80%;
+  width: 90%;
   text-align: justify;
   @media screen and (max-width: 500px) {
     font-size: 0.75rem;

@@ -5,7 +5,7 @@ import { RotateSpinner } from 'react-spinners-kit';
 import avatar from '../../images/avatar.svg';
 
 const sharedStyles = css`
-  background-color: #010606;
+  background-color: transparent;
   color: #fff;
   height: 2rem;
   border: 2px solid #01bf71;
@@ -57,7 +57,7 @@ const StyledTextArea = styled.textarea`
   color: #fff;
   min-height: 100px;
   border: 2px solid #01bf71;
-  background-color: #010606;
+  background-color: transparent;
   border-radius: 5px;
   letter-spacing: 1.1px;
   resize: none;

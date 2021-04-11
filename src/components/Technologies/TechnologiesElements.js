@@ -61,6 +61,7 @@ export const TechCard = styled.a`
   align-items: center;
   padding: 1em;
   transition: all 0.4s ease-in-out;
+  color: inherit;
 
   &:hover {
     transform: translateY(-15px);
