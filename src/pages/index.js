@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { GlobalStyle } from '../GlobalStyle';
-
+import { useEffect, useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -21,7 +19,7 @@ import ProjectHeader from '../components/ProjectHeader';
 import Loading from '../components/Loading';
 import Cursor from '../components/Cursor';
 
-const Home = () => {
+const Home = ({ themeToggler }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -41,10 +39,9 @@ const Home = () => {
 
   return (
     <>
-      <GlobalStyle />
       <Cursor />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} themeToggler={themeToggler} />
       <HeroSection />
       <About />
       <Tech />

@@ -47,6 +47,7 @@ export const HeroContent = styled.div`
   border: solid 0px transparent;
   background-clip: padding-box;
   box-shadow: 1px 5px 10px 5px rgba(1, 191, 113, 0.2);
+  z-index: 1;
 `;
 
 // **********Hero H1******************

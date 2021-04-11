@@ -1,17 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+export const GlobalStyles = createGlobalStyle`
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
  body {
     font-family: 'Poppins', sans-serif;
     background:#010606;
     color: rgba(255,255,255,0.9);
+    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.body};
     line-height: 1.4;
     font-size: 1rem;
     font-weight: 300;

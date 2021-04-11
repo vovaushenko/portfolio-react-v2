@@ -13,8 +13,9 @@ import {
   NavAvatar,
 } from './NabvarElements';
 import logo from '../../images/Logo.png';
+import ThemeToggler from '../../components/ThemeToggler/ThemeToggler';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, themeToggler }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -78,7 +79,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Portfolio
+                  Projects
                 </NavLinks>
               </NavItem>
 
@@ -95,7 +96,7 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
             </NavMenu>
-            <p></p>
+            <ThemeToggler themeToggler={themeToggler} />
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
