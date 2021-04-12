@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
     font-size: 1rem;
     font-weight: 300;
+    transition: all 0.2s ease-in-out;
  }
 
  h1,
@@ -53,6 +54,7 @@ img {
   display: block;
 }
 
+
 ::-webkit-scrollbar {
   width:5px;
   
@@ -62,7 +64,7 @@ img {
 
 }
 ::-webkit-scrollbar-thumb {
-  background:#01bf71;
+  background:${({ theme }) => theme.mainColor};;
   border-radius:25px;
 }
 

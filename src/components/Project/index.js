@@ -94,7 +94,7 @@ const Project = ({
                 target="_blank"
                 rel="noreferrer"
               >
-                <ButtonGitIcon lightmode={+lightmode} />
+                <ButtonGitIcon lightmode={+lightmode} className="icon" />
                 GitHub
               </ProjectGitHubLink>
 
@@ -104,7 +104,7 @@ const Project = ({
                 target="_blank"
                 rel="noreferrer"
               >
-                <ButtonLiveIcon lightmode={+lightmode} />
+                <ButtonLiveIcon lightmode={+lightmode} className="icon" />
                   Live  
               </ProjectGitHubLink>
             </ProjectLinkWrapper>

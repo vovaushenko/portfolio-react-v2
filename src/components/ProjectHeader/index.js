@@ -14,7 +14,7 @@ const ProjectSection = styled.section`
 const ProjectHeader = styled.h2`
   font-size: 2.5rem;
   letter-spacing: 1.1px;
-  color: #01bf71;
+  ${({ theme }) => theme.gradient};
   margin-bottom: 1rem;
 
   @media screen and (max-width: 768px) {

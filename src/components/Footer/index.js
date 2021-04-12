@@ -1,7 +1,8 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import CanadaFlag from '../../images/canada.png';
-import logo from '../../images/Logo.png';
+import logoDarkMode from '../../images/Logo.png';
+import logoLightMode from '../../images/Logo-Light.png';
 
 import {
   FooterContainer,
@@ -16,8 +17,10 @@ import {
 
 import { FaGithub, FaLinkedin, FaTwitter, FaDev } from 'react-icons/fa';
 import { SiCodewars } from 'react-icons/si';
+import { useGlobalContext } from '../../context/context';
 
-const Footer_new = () => {
+const Footer = () => {
+  const { theme } = useGlobalContext();
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -25,7 +28,11 @@ const Footer_new = () => {
     <FooterContainer>
       <FooterImageContainer>
         <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
-        <FooterLogo src={logo} alt="My logo" onClick={toggleHome} />
+        <FooterLogo
+          src={theme === 'dark' ? logoDarkMode : logoLightMode}
+          alt="My logo"
+          onClick={toggleHome}
+        />
       </FooterImageContainer>
 
       <FooterCopyright>Handcrafted by me &copy; 2021</FooterCopyright>
@@ -80,4 +87,4 @@ const Footer_new = () => {
   );
 };
 
-export default Footer_new;
+export default Footer;

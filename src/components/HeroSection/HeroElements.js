@@ -41,19 +41,19 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background: rgba(11, 156, 49, 0.1);
+  background: ${({ theme }) => theme.heroBg};
   border-radius: 20px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
   border: solid 0px transparent;
   background-clip: padding-box;
-  box-shadow: 1px 5px 10px 5px rgba(1, 191, 113, 0.2);
+  box-shadow: 1px 1px 1px 1px ${({ theme }) => theme.heroBg};
   z-index: 1;
 `;
 
 // **********Hero H1******************
 
 export const HeroH1 = styled.h1`
-  color: #01bf71;
+  color: ${({ theme }) => theme.mainColor};
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: 1.5px;

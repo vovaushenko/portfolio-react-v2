@@ -20,9 +20,8 @@ const StyledCheckbox = styled.input`
 const StyledLabel = styled.label`
   width: 50px;
   height: 26px;
-  background: rgba(11, 156, 49, 0.5);
+  background: ${({ theme }) => theme.togglerColor};
   border-radius: 20px;
-  backdrop-filter: blur(3px);
   border: solid 0px transparent;
   border-radius: 50px;
   display: flex;

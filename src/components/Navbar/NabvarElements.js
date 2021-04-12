@@ -4,7 +4,8 @@ import { Link as LinkScroll } from 'react-scroll';
 
 // ************ NAVBAR **************************
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav, theme }) =>
+    scrollNav ? theme.navBg : theme.navGlass};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -89,7 +90,7 @@ export const NavLinks = styled(LinkScroll)`
   }
 
   &:hover {
-    color: #01bf71;
+    color: ${({ theme }) => theme.mainColor};
   }
 `;
 

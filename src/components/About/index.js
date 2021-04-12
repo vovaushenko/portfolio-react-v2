@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import avatar from '../../images/avatar.svg';
+import avatarDarkMode from '../../images/avatar.svg';
+import avatarLightMode from '../../images/avatar-light-mode.svg';
 import server from '../../images/servers.png';
 import coding from '../../images/code.png';
 import ux from '../../images/ux-interface.png';
 import kindness from '../../images/kindness.png';
 import friendship from '../../images/friend.png';
 import leetcode from '../../images/1280px-LeetCode_Logo_black_with_text.svg.png';
+import { useGlobalContext } from '../../context/context';
 
 const AboutContainer = styled.section`
   display: flex;
@@ -23,7 +25,7 @@ const Avatar = styled.img`
 `;
 
 const AboutHeader = styled.h1`
-  color: #01bf71;
+  color: ${({ theme }) => theme.mainColor};
   font-size: 1.5rem;
   letter-spacing: 1.1px;
   text-align: center;
@@ -50,15 +52,7 @@ const FavoriteText = styled.p`
   letter-spacing: 1.1px;
   font-size: 1rem;
   margin-top: 2rem;
-  background-color: #01bf71;
-  background-image: linear-gradient(
-    45deg,
-    #01bf71 0%,
-    #2bd2ff 52%,
-    #2bff88 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  ${({ theme }) => theme.gradient};
 
   @media screen and (max-width: 768px) {
     font-size: 0.75rem;
@@ -94,15 +88,7 @@ const Icon = styled.img`
 
 const AboutMainHeader = styled.h1`
   font-size: 2.5rem;
-  background-color: #01bf71;
-  background-image: linear-gradient(
-    45deg,
-    #01bf71 0%,
-    #2bd2ff 52%,
-    #2bff88 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  ${({ theme }) => theme.gradient};
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
@@ -123,10 +109,14 @@ const LeetCodeImg = styled.img`
   margin-top: 1rem;
 `;
 
-const index = () => {
+const About = () => {
+  const { theme } = useGlobalContext();
   return (
     <AboutContainer id="skills">
-      <Avatar src={avatar} alt="Friendly avatar" />
+      <Avatar
+        src={theme === 'dark' ? avatarDarkMode : avatarLightMode}
+        alt="Friendly avatar"
+      />
 
       <AboutMainHeader>Vova Ushenko</AboutMainHeader>
 
@@ -174,4 +164,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;

@@ -19,16 +19,7 @@ export const TechHeader = styled.h2`
   letter-spacing: 1.1px;
   margin-top: 3rem;
   text-align: center;
-
-  background-color: #01bf71;
-  background-image: linear-gradient(
-    45deg,
-    #01bf71 0%,
-    #2bd2ff 52%,
-    #2bff88 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  ${({ theme }) => theme.gradient};
 
   @media screen and (max-width: 768px) {
     font-size: 1.25rem;

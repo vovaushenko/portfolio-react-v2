@@ -12,12 +12,13 @@ import {
   NavLinks,
   NavAvatar,
 } from './NabvarElements';
-import logo from '../../images/Logo.png';
+import logoDarkMode from '../../images/Logo.png';
+import logoLightMode from '../../images/Logo-White.png';
 import ThemeToggler from '../../components/ThemeToggler/ThemeToggler';
 import { useGlobalContext } from '../../context/context';
 
 const Navbar = ({ themeToggler }) => {
-  const { toggleSidebar } = useGlobalContext();
+  const { toggleSidebar, theme } = useGlobalContext();
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -42,7 +43,10 @@ const Navbar = ({ themeToggler }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <NavAvatar src={logo} alt="My logo" />
+              <NavAvatar
+                src={theme === 'dark' ? logoDarkMode : logoLightMode}
+                alt="My logo"
+              />
             </NavLogo>
             <MobileIcon onClick={toggleSidebar}>
               <FaBars />

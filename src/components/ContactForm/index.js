@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
 import { RotateSpinner } from 'react-spinners-kit';
-import avatar from '../../images/avatar.svg';
+import avatarDarkMode from '../../images/avatar.svg';
+import avatarLightMode from '../../images/avatar-light-mode.svg';
+import { useGlobalContext } from '../../context/context';
 
 const sharedStyles = css`
   background-color: transparent;
-  color: #fff;
+  color: ${({ theme }) => theme.text};
   height: 2rem;
-  border: 2px solid #01bf71;
+  border: 2px solid;
+  border-color: ${({ theme }) => theme.mainColor};
   border-radius: 5px;
   margin: 0.5rem 0 1rem 0;
   padding: 1.5rem;
   letter-spacing: 1.1px;
+  font-size: 1.125rem;
 `;
 
 const StyledFormWrapper = styled.div`
@@ -23,7 +27,7 @@ const StyledFormWrapper = styled.div`
 
   h2 {
     text-align: center;
-    color: #01bf71;
+    color: ${({ theme }) => theme.mainColor};
   }
 `;
 
@@ -31,7 +35,8 @@ const StyledForm = styled.form`
   width: 100%;
   max-width: 700px;
   padding: 40px;
-  border: 2px solid #01bf71;
+  border: 2px solid;
+  border-color: ${({ theme }) => theme.mainColor};
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -44,67 +49,65 @@ const StyledInput = styled.input`
   ${sharedStyles}
 
   :focus {
-    color: #01bf71;
-    background-color: #010606;
+    background-color: transparent;
     outline: none !important;
-    border-color: #01bf71;
-    box-shadow: 0 0 10px #01bf71;
+    box-shadow: 0 0 10px ${({ theme }) => theme.mainColor};
   }
 `;
 
 const StyledTextArea = styled.textarea`
   width: 100%;
-  color: #fff;
+  color: ${({ theme }) => theme.text};
   min-height: 100px;
-  border: 2px solid #01bf71;
+  border: 2px solid;
+  border-color: ${({ theme }) => theme.mainColor};
   background-color: transparent;
   border-radius: 5px;
   letter-spacing: 1.1px;
   resize: none;
+  font-size: 1.5rem;
 
   :focus {
-    color: #01bf71;
-    background-color: #010606;
     outline: none !important;
-    border-color: #01bf71;
-    box-shadow: 0 0 10px #01bf71;
+    box-shadow: 0 0 10px ${({ theme }) => theme.mainColor};
   }
 `;
 
 const StyledButton = styled.button`
   display: block;
-  background-color: #01bf71;
-  color: #010606;
+  color: ${({ theme }) => theme.mainColor};
+  background: transparent;
   font-family: inherit;
+  border: 2px solid ${({ theme }) => theme.mainColor};
   font-size: 1rem;
   font-weight: 700;
-  border: 0;
-  border-radius: 6px;
-  height: 40px;
+  border-radius: 2rem;
+  height: 3rem;
   padding: 0 2rem;
   cursor: pointer;
   box-sizing: border-box;
   margin-top: 1rem;
+  outline: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background-color: #fff;
+    color: #fff;
+    background-color: ${({ theme }) => theme.mainColor};
   }
 `;
 
 const StyledFieldset = styled.fieldset`
-  border: 2px solid #01bf71;
+  border: 2px solid;
+  border-color: ${({ theme }) => theme.mainColor};
   border-radius: 5px;
   padding: 10px;
   margin: 20px 0;
 
   legend {
     padding: 0 10px;
-    font-family: 'Poppins', sans-serif;
   }
   label {
     padding-right: 20px;
-    font-family: 'Poppins', sans-serif;
 
     @media screen and (max-width: 500px) {
       display: flex;
@@ -113,7 +116,6 @@ const StyledFieldset = styled.fieldset`
 
   input {
     margin-right: 10px;
-    font-family: 'Poppins', sans-serif;
   }
 `;
 
@@ -153,7 +155,7 @@ const AvatarWrapper = styled.div`
 const StyledHeader = styled.h2`
   letter-spacing: 1.1px;
   margin-top: 1rem;
-  color: #01bf71;
+  color: ${({ theme }) => theme.mainColor};
 `;
 
 const initialState = {
@@ -168,6 +170,8 @@ const ContactForm = () => {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const { theme } = useGlobalContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -213,7 +217,10 @@ const ContactForm = () => {
   return (
     <>
       <AvatarWrapper id="footer">
-        <StyledAvatar src={avatar} alt="friendly avatar" />
+        <StyledAvatar
+          src={theme === 'dark' ? avatarDarkMode : avatarLightMode}
+          alt="friendly avatar"
+        />
         <StyledHeader>Always happy to hear from you </StyledHeader>
       </AvatarWrapper>
       <StyledFormWrapper>

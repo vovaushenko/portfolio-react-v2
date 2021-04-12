@@ -13,12 +13,15 @@ import {
   VideoBg,
 } from './HeroElements';
 
-import Video from '../../video/video-bg.mp4';
+import DarkBg from '../../video/video-bg.mp4';
+import LightBg from '../../video/lightBackground.mp4';
 import { Button } from '../ButtonElement';
 import flag from '../../images/flag.png';
+import { useGlobalContext } from '../../context/context';
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
+  const { theme } = useGlobalContext();
 
   const onHover = () => {
     setHover(!hover);
@@ -30,7 +33,7 @@ const HeroSection = () => {
           autoPlay
           loop
           muted
-          src={Video}
+          src={theme === 'dark' ? DarkBg : LightBg}
           type="video/mp4"
           alt="Vide Background"
         />
