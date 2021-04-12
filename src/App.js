@@ -5,10 +5,11 @@ import { useDarkMode } from './hooks/useDarkTheme';
 import { darkTheme, lightTheme } from './Themes';
 import Home from './pages';
 import SigninPage from './pages/signin';
+import { useGlobalContext } from './context/context';
 
 function App() {
-  const [theme, themeToggler] = useDarkMode('');
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const { themeMode, themeToggler } = useGlobalContext();
+
   return (
     <>
       <ThemeProvider theme={themeMode}>

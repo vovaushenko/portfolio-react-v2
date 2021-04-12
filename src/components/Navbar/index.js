@@ -14,8 +14,10 @@ import {
 } from './NabvarElements';
 import logo from '../../images/Logo.png';
 import ThemeToggler from '../../components/ThemeToggler/ThemeToggler';
+import { useGlobalContext } from '../../context/context';
 
-const Navbar = ({ toggle, themeToggler }) => {
+const Navbar = ({ themeToggler }) => {
+  const { toggleSidebar } = useGlobalContext();
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -42,7 +44,7 @@ const Navbar = ({ toggle, themeToggler }) => {
             <NavLogo to="/" onClick={toggleHome}>
               <NavAvatar src={logo} alt="My logo" />
             </NavLogo>
-            <MobileIcon onClick={toggle}>
+            <MobileIcon onClick={toggleSidebar}>
               <FaBars />
             </MobileIcon>
             <NavMenu>

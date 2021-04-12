@@ -1,4 +1,4 @@
-import React from 'react';
+import { useGlobalContext } from '../../context/context';
 import {
   CloseIcon,
   Icon,
@@ -8,11 +8,13 @@ import {
   SidebarWrapper,
 } from './SidebarElements';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = () => {
+  const { toggleSidebar: toggle, isSidebarOpen } = useGlobalContext();
+
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer isOpen={isSidebarOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <CloseIcon onClick={toggle} />
       </Icon>
 
       <SidebarWrapper>

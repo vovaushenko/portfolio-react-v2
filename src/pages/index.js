@@ -20,12 +20,7 @@ import Loading from '../components/Loading';
 import Cursor from '../components/Cursor';
 
 const Home = ({ themeToggler }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,9 +34,9 @@ const Home = ({ themeToggler }) => {
 
   return (
     <>
+      <Sidebar />
       <Cursor />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} themeToggler={themeToggler} />
+      <Navbar themeToggler={themeToggler} />
       <HeroSection />
       <About />
       <Tech />
