@@ -1,6 +1,7 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import CanadaFlag from '../../images/canada.png';
+import CanadaIcon from '../../images/canada_round.png';
 import logoDarkMode from '../../images/Logo.png';
 import logoLightMode from '../../images/Logo-Light.png';
 
@@ -27,7 +28,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterImageContainer>
-        <FooterCanada src={CanadaFlag} alt="Canada is the Best!" />
+        <FooterCanada src={CanadaIcon} alt="Canada is the Best!" />
         <FooterLogo
           src={theme === 'dark' ? logoDarkMode : logoLightMode}
           alt="My logo"

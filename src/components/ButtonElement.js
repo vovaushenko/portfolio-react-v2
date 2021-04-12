@@ -2,13 +2,10 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const Button = styled(Link)`
-  border-radius: 20px;
-
   padding: 0.5em 1em;
   color: ${({ dark }) => (dark ? '#010606' : '#fff')};
-  font-size: ${({ fontBig }) => (fontBig ? '1.5rem' : '22px')};
+  font-size: 1.5rem;
   outline: none;
-  border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -41,7 +38,7 @@ export const Button = styled(Link)`
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
 
   :active {
@@ -69,7 +66,7 @@ export const Button = styled(Link)`
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 2rem;
   }
 
   @keyframes glowing {
