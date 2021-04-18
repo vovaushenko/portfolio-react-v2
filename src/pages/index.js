@@ -19,7 +19,7 @@ import ProjectHeader from '../components/ProjectHeader';
 import Loading from '../components/Loading';
 import Cursor from '../components/Cursor';
 
-const Home = ({ themeToggler }) => {
+const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -34,9 +34,9 @@ const Home = ({ themeToggler }) => {
 
   return (
     <>
-      <Sidebar />
       <Cursor />
-      <Navbar themeToggler={themeToggler} />
+      <Sidebar />
+      <Navbar />
       <HeroSection />
       <About />
       <Tech />

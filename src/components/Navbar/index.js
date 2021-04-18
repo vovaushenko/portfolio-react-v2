@@ -10,6 +10,7 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
+  NavRouterLinks,
   NavAvatar,
 } from './NabvarElements';
 import logoDarkMode from '../../images/Logo.png';
@@ -17,8 +18,8 @@ import logoLightMode from '../../images/Logo-White.png';
 import ThemeToggler from '../../components/ThemeToggler/ThemeToggler';
 import { useGlobalContext } from '../../context/context';
 
-const Navbar = ({ themeToggler }) => {
-  const { toggleSidebar, theme } = useGlobalContext();
+const Navbar = () => {
+  const { toggleSidebar, themeToggler, theme } = useGlobalContext();
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -101,6 +102,7 @@ const Navbar = ({ themeToggler }) => {
                   Contact
                 </NavLinks>
               </NavItem>
+              <NavRouterLinks to="/resume">Resume</NavRouterLinks>
             </NavMenu>
             <ThemeToggler themeToggler={themeToggler} />
           </NavbarContainer>

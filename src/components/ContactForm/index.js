@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import emailjs from 'emailjs-com';
+import ReusableButton from '../ReusableButton/ReusableButton';
 import { RotateSpinner } from 'react-spinners-kit';
 import avatarDarkMode from '../../images/avatar.svg';
 import avatarLightMode from '../../images/avatar-light-mode.svg';
@@ -70,29 +71,6 @@ const StyledTextArea = styled.textarea`
   :focus {
     outline: none !important;
     box-shadow: 0 0 10px ${({ theme }) => theme.mainColor};
-  }
-`;
-
-const StyledButton = styled.button`
-  display: block;
-  color: ${({ theme }) => theme.mainColor};
-  background: transparent;
-  font-family: inherit;
-  border: 2px solid ${({ theme }) => theme.mainColor};
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: 2rem;
-  height: 3rem;
-  padding: 0 2rem;
-  cursor: pointer;
-  box-sizing: border-box;
-  margin-top: 1rem;
-  outline: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    color: #fff;
-    background-color: ${({ theme }) => theme.mainColor};
   }
 `;
 
@@ -315,7 +293,7 @@ const ContactForm = () => {
             </StyledSuccess>
           )}
 
-          <StyledButton type="submit">Send Message</StyledButton>
+          <ReusableButton type="submit" text="Send Message" />
         </StyledForm>
       </StyledFormWrapper>
     </>

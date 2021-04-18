@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
@@ -73,7 +73,8 @@ export const NavItem = styled.div`
 `;
 
 // ************ Nav Links ***********************
-export const NavLinks = styled(LinkScroll)`
+
+const sharedCss = css`
   color: #fff;
   display: flex;
   align-items: center;
@@ -92,6 +93,13 @@ export const NavLinks = styled(LinkScroll)`
   &:hover {
     color: ${({ theme }) => theme.mainColor};
   }
+`;
+
+export const NavLinks = styled(LinkScroll)`
+  ${sharedCss}
+`;
+export const NavRouterLinks = styled(LinkRouter)`
+  ${sharedCss}
 `;
 
 // ************Nav Avatar*************************
