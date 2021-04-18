@@ -12,37 +12,6 @@ export const FooterContainer = styled.footer`
   margin-top: 2rem;
 `;
 
-// ************ Links Wrapper **************
-
-export const SocialLinksWrapper = styled.div`
-  display: flex;
-`;
-
-// ************ Social Icon Link ***********
-
-export const SocialIconLink = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${({ theme }) => theme.mainColor};
-  font-size: 1.3rem;
-  padding: 0.5em;
-  margin: 1rem 0.7rem;
-  border: 2px solid ${({ theme }) => theme.mainColor};
-  border-radius: 50%;
-
-  &:hover {
-    color: ${({ theme }) => (theme.mode === 'dark' ? '#fff' : '#2bd2ff')};
-    border: 2px solid
-      ${({ theme }) => (theme.mode === 'dark' ? '#fff' : '#2bd2ff')};
-    transition: all 0.2s ease-in-out;
-  }
-
-  @media screen and (max-width: 500px) {
-    padding: 0.3em;
-  }
-`;
-
 export const FooterCopyright = styled.p`
   font-size: 1.125rem;
   letter-spacing: 1.1px;

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
+import SocialLinks from '../SocialLinks';
 
 const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  height: 100vh;
+  min-height: 100vh;
 
   div {
     width: 70%;
@@ -30,12 +30,14 @@ const StyledAbout = styled.div`
     a {
       text-decoration: none;
       font-size: 2rem;
+      cursor: pointer;
       ${({ theme }) => theme.gradient};
     }
 
     p {
       font-size: 1.125rem;
       margin-top: 1rem;
+      margin-bottom: 0;
     }
   }
 `;
@@ -46,16 +48,18 @@ const ResumeAbout = () => {
       <div>
         <h1>Vova Ushenko</h1>
         <h3>Ottawa-Gatineau Metropolitan Area · Canada ·</h3>
+
         <a href="mailto:volodymyr@ushenko.gmail.com">contact@vovaushenko.com</a>
         <p>
           I am currently working as a Freelance Web Developer and lecturer. I've
           created full-stack projects with React, Node.js, and databases with
           PostgreSQL. I have a strong foundation in design, education, and music
-          that influences my work. I am an avid learner and successful problem
+          that influences my work. I am an avid learner, successful problem
           solver and I look forward to future challenges and expanding my
           knowledge and skills.
         </p>
       </div>
+      <SocialLinks />
     </StyledAbout>
   );
 };
