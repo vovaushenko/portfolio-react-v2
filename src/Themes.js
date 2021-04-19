@@ -34,7 +34,7 @@ export const lightTheme = {
   mode: 'light',
   body:
     'linear-gradient( 89.9deg,  rgba(208,246,255,1) 0.1%, rgba(255,237,237,1) 47.9%, rgba(255,255,231,1) 100.2% )',
-  text: '#363537',
+  text: '#010606',
   background: '#6152F4',
   mainColor: '#5E57E6',
   linkColor: '#010606',

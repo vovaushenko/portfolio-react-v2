@@ -60,9 +60,12 @@ export const NavLinks = styled(LinkScroll)`
     inviewport === 'yes' ? 'underline' : ''}; */
   border-radius: 3rem;
   width: 9rem;
+  color: ${({ theme, inviewport }) =>
+    inviewport === 'yes' ? '#fff' : theme.text};
 
   &:hover {
-    color: ${({ theme }) => theme.mainColor};
+    color: ${({ theme, inviewport }) =>
+      inviewport === 'yes' ? '#fff' : theme.mainColor};
   }
 `;
 
