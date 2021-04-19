@@ -8,6 +8,7 @@ const darkModeGradient = css`
     #2bd2ff 52%,
     #2bff88 90%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -19,10 +20,11 @@ const lightModeGradient = css`
     #2bd2ff 46%,
     #c850c0 100%
   );
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
+
 const navGlass = css`
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -42,6 +44,7 @@ export const lightTheme = {
   heroBg: 'rgba(94, 87, 230, 0.1)',
   navGlass: navGlass,
 };
+
 export const darkTheme = {
   mode: 'dark',
   body: '#010606',

@@ -11,8 +11,6 @@ export const GlobalStyles = createGlobalStyle`
 
  body {
     font-family: 'Poppins', sans-serif;
-    background:#010606;
-    color: rgba(255,255,255,0.9);
     color: ${({ theme }) => theme.text};
     background: ${({ theme }) => theme.body};
     line-height: 1.4;

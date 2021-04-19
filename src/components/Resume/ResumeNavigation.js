@@ -16,7 +16,6 @@ const StyledNavigation = styled.nav`
   width: 200px;
   position: fixed;
   padding: 0 1rem;
-
   border-right: 2px solid ${({ theme }) => theme.mainColor};
 
   div {
@@ -42,7 +41,6 @@ const StyledNavigation = styled.nav`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -50,7 +48,7 @@ export const NavLinks = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
   font-size: 1rem;
-  letter-spacing: 1.1px;
+  letter-spacing: 2px;
 
   &:hover {
     color: ${({ theme }) => theme.mainColor};

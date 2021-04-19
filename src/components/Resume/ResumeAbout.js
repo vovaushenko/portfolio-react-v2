@@ -51,12 +51,24 @@ const ResumeAbout = () => {
 
         <a href="mailto:volodymyr@ushenko.gmail.com">contact@vovaushenko.com</a>
         <p>
-          I am currently working as a Freelance Web Developer and lecturer. I've
-          created full-stack projects with React, Node.js, and databases with
-          PostgreSQL. I have a strong foundation in design, education, and music
-          that influences my work. I am an avid learner, successful problem
-          solver and I look forward to future challenges and expanding my
-          knowledge and skills.
+          I am a developer driven by quality of code and software. I
+          continuously strive to improve myself and for opportunities to help my
+          team grow.
+          <br />
+          <br />
+          I've created full-stack projects with React & Node.js. Have excellent
+          knowledge of modern JS stack for building complex user interfaces for
+          the web platform.
+          <br />
+          <br />
+          I Have a strong passion to build elegant, performant and friendly user
+          experiences. For the last 2 years mostly worked with React stack and
+          building products from the ground up, including collecting business
+          requirements, composing full-featured UX designs and architecting
+          frontends.
+          <br />
+          <br />I also enjoy teaching & mentoring: I have experience teaching
+          software engineering at a University.
         </p>
       </div>
       <SocialLinks />
