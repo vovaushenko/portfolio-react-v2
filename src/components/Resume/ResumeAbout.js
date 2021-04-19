@@ -5,7 +5,7 @@ import { useGlobalContext } from '../../context/context';
 import { useOnScreen } from '../../hooks/useOnScreen';
 import SocialLinks from '../SocialLinks';
 
-const StyledAbout = styled.div`
+const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +42,27 @@ const StyledAbout = styled.div`
       font-size: 1.125rem;
       margin-top: 1rem;
       margin-bottom: 0;
+    }
+    @media ${({ theme }) => theme.media.tablet} {
+      width: 100%;
+      margin: 0;
+      h1 {
+        font-size: 3rem;
+        color: red;
+      }
+      h3 {
+        font-size: 1.125rem;
+      }
+      a {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      div {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 `;

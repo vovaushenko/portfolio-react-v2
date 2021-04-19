@@ -38,6 +38,10 @@ const StyledNavigation = styled.nav`
       }
     }
   }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    display: none;
+  }
 `;
 
 export const NavLinks = styled(LinkScroll)`

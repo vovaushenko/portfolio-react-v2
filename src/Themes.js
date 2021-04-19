@@ -43,6 +43,11 @@ export const lightTheme = {
   navBg: '#2B2B3D',
   heroBg: 'rgba(94, 87, 230, 0.1)',
   navGlass: navGlass,
+
+  media: {
+    phone: '(max-width: 500px)',
+    tablet: '(max-width: 768px)',
+  },
 };
 
 export const darkTheme = {
@@ -57,4 +62,9 @@ export const darkTheme = {
   navBg: '#000',
   heroBg: 'rgba(11, 156, 49, 0.1)',
   navGlass: navGlass,
+
+  media: {
+    phone: '(max-width: 500px)',
+    tablet: '(max-width: 768px)',
+  },
 };

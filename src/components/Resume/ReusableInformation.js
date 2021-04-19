@@ -7,17 +7,23 @@ const StyledWrapper = styled.article`
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 3rem;
-`;
 
-const StyledSubHeader = styled.h3``;
-const StyledDetails = styled.p``;
+  @media ${({ theme }) => theme.media.tablet} {
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+`;
 
 const ReusableInformation = ({ header, subHeader, date, details }) => {
   return (
     <StyledWrapper>
       <ReusableTextDate header={header} date={date} />
-      <StyledSubHeader>{subHeader}</StyledSubHeader>
-      <StyledDetails>{details}</StyledDetails>
+      <h3>{subHeader}</h3>
+      <p>{details}</p>
     </StyledWrapper>
   );
 };

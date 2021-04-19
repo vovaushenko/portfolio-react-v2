@@ -12,6 +12,19 @@ const StyledContainer = styled.div`
     margin-left: 125px;
     padding: 1rem;
   }
+  @media ${({ theme }) => theme.media.tablet} {
+    width: 100%;
+    margin: 0;
+
+    h1 {
+      font-size: 3rem;
+      color: red;
+    }
+    .container {
+      width: 100%;
+      margin: 0;
+    }
+  }
 `;
 
 const ReusableContainer = ({ children, id }) => {

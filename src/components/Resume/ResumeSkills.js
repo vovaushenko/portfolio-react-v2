@@ -40,6 +40,12 @@ const StyledIcons = styled.div`
       transform: rotate(360deg);
     }
   }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    img {
+      width: 2.5rem;
+    }
+  }
 `;
 
 const StyledSkillPair = styled.div`
@@ -55,6 +61,14 @@ const StyledSkillPair = styled.div`
   }
   p {
     margin-bottom: 0;
+  }
+  @media ${({ theme }) => theme.media.tablet} {
+    h4 {
+      font-size: 0.75rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
   }
 `;
 

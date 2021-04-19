@@ -5,6 +5,10 @@ const StyledSubHeader = styled.h3`
   color: ${({ theme }) => theme.mainColor};
   letter-spacing: 2px;
   margin-top: ${({ marginTop }) => marginTop || 0};
+
+  @media ${({ theme }) => theme.media.tablet} {
+    font-size: 1rem;
+  }
 `;
 
 const ReusableSectionSubHeader = ({ children, marginTop }) => {
