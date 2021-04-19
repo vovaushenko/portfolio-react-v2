@@ -4,10 +4,11 @@ const StyledSubHeader = styled.h3`
   text-transform: uppercase;
   color: ${({ theme }) => theme.mainColor};
   letter-spacing: 2px;
+  margin-top: ${({ marginTop }) => marginTop || 0};
 `;
 
-const ReusableSectionHeader = ({ children }) => {
-  return <StyledSubHeader>{children}</StyledSubHeader>;
+const ReusableSectionSubHeader = ({ children, marginTop }) => {
+  return <StyledSubHeader marginTop={marginTop}>{children}</StyledSubHeader>;
 };
 
-export default ReusableSectionHeader;
+export default ReusableSectionSubHeader;

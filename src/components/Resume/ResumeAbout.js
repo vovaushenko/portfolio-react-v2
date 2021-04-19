@@ -67,8 +67,10 @@ const ResumeAbout = () => {
           requirements, composing full-featured UX designs and architecting
           frontends.
           <br />
-          <br />I also enjoy teaching & mentoring: I have experience teaching
-          software engineering at a University.
+          <br />A teacher at heart, I had been fortunate enough to pass what
+          little I know with many people, thanks to my professional and
+          volunteer activity. I have experience teaching software engineering at
+          a University and being a mentor.
         </p>
       </div>
       <SocialLinks />
