@@ -10,6 +10,9 @@ import nodeLogo from '../../images/nodejs-original.svg';
 import mongoLogo from '../../images/mongodb-original.svg';
 import pythonLogo from '../../images/python-original.svg';
 import mySqlLogo from '../../images/mysql-original.svg';
+import { useOnScreen } from '../../hooks/useOnScreen';
+import { useGlobalContext } from '../../context/context';
+import { useEffect } from 'react';
 
 const StyledIcons = styled.div`
   display: flex;
@@ -56,6 +59,15 @@ const StyledSkillPair = styled.div`
 `;
 
 const ResumeSkills = () => {
+  const [setRef, visible] = useOnScreen({ threshold: 0.8 });
+  const { setCurrentlyInViewport } = useGlobalContext();
+
+  useEffect(() => {
+    if (visible) {
+      setCurrentlyInViewport('skills');
+    }
+  });
+
   return (
     <ReusableContainer id="skills">
       <ReusableSectionHeader>Skills</ReusableSectionHeader>
@@ -63,7 +75,7 @@ const ResumeSkills = () => {
       {/* Frontend Section */}
       <ReusableSectionSubHeader>Frontend</ReusableSectionSubHeader>
       <StyledIcons>
-        <img className="reactLogo" src={reactLogo} alt="React" />
+        <img className="reactLogo" src={reactLogo} alt="React" ref={setRef} />
         <img src={javascriptLogo} alt="Javascript" />
         <img src={htmlLogo} alt="Javascript" />
         <img src={cssLogo} alt="Javascript" />

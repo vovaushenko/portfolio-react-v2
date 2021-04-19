@@ -13,9 +13,20 @@ const AppProvider = ({ children }) => {
   const [theme, themeToggler] = useDarkMode('');
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
+  //currently on screen - Intersection Observer - in resume page
+  const [currentlyInViewport, setCurrentlyInViewport] = useState('');
+
   return (
     <AppContext.Provider
-      value={{ isSidebarOpen, toggleSidebar, themeToggler, themeMode, theme }}
+      value={{
+        isSidebarOpen,
+        toggleSidebar,
+        themeToggler,
+        themeMode,
+        theme,
+        currentlyInViewport,
+        setCurrentlyInViewport,
+      }}
     >
       {children}
     </AppContext.Provider>

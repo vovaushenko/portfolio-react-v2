@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
+import { useGlobalContext } from '../../context/context';
+import { useOnScreen } from '../../hooks/useOnScreen';
 import ReusableContainer from './ReusableContainer';
 import ReusableSectionHeader from './ReusableSectionHeader';
 
@@ -15,11 +18,20 @@ const StyledTextWrapper = styled.div`
 `;
 
 const ResumeInterests = () => {
+  const [setRef, visible] = useOnScreen({ threshold: 0.8 });
+  const { setCurrentlyInViewport } = useGlobalContext();
+
+  useEffect(() => {
+    if (visible) {
+      setCurrentlyInViewport('interests');
+    }
+  });
+
   return (
     <ReusableContainer id="interests">
       <ReusableSectionHeader>Interests</ReusableSectionHeader>
 
-      <StyledTextWrapper>
+      <StyledTextWrapper ref={setRef}>
         <h3>Outside of my work I have many other passions and hobbies.</h3>
 
         <p>

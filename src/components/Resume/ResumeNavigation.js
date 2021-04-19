@@ -45,10 +45,17 @@ export const NavLinks = styled(LinkScroll)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
+  /* color: ${({ theme, inviewport }) =>
+    inviewport === 'yes' ? theme.mainColor : ''}; */
+  background: ${({ theme, inviewport }) =>
+    inviewport === 'yes' ? theme.mainColor : ''};
+  /* text-decoration: ${({ inviewport }) =>
+    inviewport === 'yes' ? 'underline' : ''}; */
+  border-radius: 3rem;
+  width: 9rem;
 
   &:hover {
     color: ${({ theme }) => theme.mainColor};
@@ -56,12 +63,14 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 const ResumeNavigation = () => {
+  const { themeToggler } = useGlobalContext();
+  const { currentlyInViewport } = useGlobalContext();
   let history = useHistory();
+
   const goBack = () => {
     history.push('/');
   };
 
-  const { themeToggler } = useGlobalContext();
   return (
     <StyledNavigation>
       <div>
@@ -74,6 +83,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'about' ? 'yes' : null}
             >
               About
             </NavLinks>
@@ -85,6 +95,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'experience' ? 'yes' : null}
             >
               experience
             </NavLinks>
@@ -96,6 +107,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'education' ? 'yes' : null}
             >
               education
             </NavLinks>
@@ -107,6 +119,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'skills' ? 'yes' : null}
             >
               skills
             </NavLinks>
@@ -118,6 +131,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'interests' ? 'yes' : null}
             >
               interests
             </NavLinks>
@@ -129,6 +143,7 @@ const ResumeNavigation = () => {
               duration={1000}
               spy={true}
               exact="true"
+              inviewport={currentlyInViewport === 'awards' ? 'yes' : null}
             >
               awards
             </NavLinks>

@@ -1,4 +1,8 @@
+import React, { useEffect, useRef } from 'react';
+
 import styled from 'styled-components';
+import { useGlobalContext } from '../../context/context';
+import { useOnScreen } from '../../hooks/useOnScreen';
 import SocialLinks from '../SocialLinks';
 
 const StyledAbout = styled.div`
@@ -43,9 +47,19 @@ const StyledAbout = styled.div`
 `;
 
 const ResumeAbout = () => {
+  const [setRef, visible] = useOnScreen({ threshold: 0.8 });
+
+  const { setCurrentlyInViewport } = useGlobalContext();
+
+  useEffect(() => {
+    if (visible) {
+      setCurrentlyInViewport('about');
+    }
+  });
+
   return (
     <StyledAbout id="about">
-      <div>
+      <div ref={setRef}>
         <h1>Vova Ushenko</h1>
         <h3>Ottawa-Gatineau Metropolitan Area · Canada ·</h3>
 

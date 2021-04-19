@@ -7,6 +7,7 @@ import ResumeExperience from '../components/Resume/ResumeExperience';
 import ResumeSkills from '../components/Resume/ResumeSkills';
 import ResumeInterests from '../components/Resume/ResumeInterests';
 import ResumeAwards from '../components/Resume/ResumeAwards';
+import { useRef } from 'react';
 
 const ResumePage = () => {
   return (
