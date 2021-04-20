@@ -97,6 +97,18 @@ const ResumeNavigation = () => {
           </li>
           <li>
             <NavLinks
+              to="skills"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              inviewport={currentlyInViewport === 'skills' ? 'yes' : null}
+            >
+              skills
+            </NavLinks>
+          </li>
+          <li>
+            <NavLinks
               to="experience"
               smooth={true}
               duration={1000}
@@ -119,18 +131,7 @@ const ResumeNavigation = () => {
               education
             </NavLinks>
           </li>
-          <li>
-            <NavLinks
-              to="skills"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              exact="true"
-              inviewport={currentlyInViewport === 'skills' ? 'yes' : null}
-            >
-              skills
-            </NavLinks>
-          </li>
+
           <li>
             <NavLinks
               to="interests"

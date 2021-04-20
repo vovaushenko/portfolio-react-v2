@@ -9,6 +9,7 @@ import kindness from '../../images/kindness.png';
 import friendship from '../../images/friend.png';
 import leetcode from '../../images/1280px-LeetCode_Logo_black_with_text.svg.png';
 import { useGlobalContext } from '../../context/context';
+import ReusableButton from '../ReusableButton/ReusableButton';
 
 const AboutContainer = styled.section`
   display: flex;
@@ -62,6 +63,9 @@ const FavoriteText = styled.p`
 `;
 
 const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 70%;
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -135,12 +139,15 @@ const About = () => {
           worked with various cool technologies to design and code
           beautifully-simple, intuitive and clean interfaces.
         </AboutText>
-
+        <div>
+          <ReusableButton type="button" text="Interactive Resume" />
+        </div>
         <FavoriteText>
           My favourite things are: coding, weightlifting, being nice to people
           and solving cool problems on Codewars and LeetCode
         </FavoriteText>
       </TextWrapper>
+
       <HobbiesWrapper>
         <a
           href="https://www.codewars.com/users/VovaCodes"

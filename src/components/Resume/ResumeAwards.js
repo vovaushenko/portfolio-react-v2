@@ -11,6 +11,7 @@ import elsevier from '../../images/Elsevier.png';
 const StyledWrapper = styled.section`
   h3 {
     margin-bottom: 1rem;
+    letter-spacing: 1.2px;
     color: ${({ theme }) => theme.mainColor};
   }
 
@@ -19,6 +20,7 @@ const StyledWrapper = styled.section`
     align-items: center;
 
     a {
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       text-decoration: none;
@@ -27,6 +29,11 @@ const StyledWrapper = styled.section`
       margin-left: 2rem;
       color: ${({ theme }) => theme.text};
       height: 90px;
+
+      &:hover {
+        color: ${({ theme }) => theme.mainColor};
+      }
+
       img {
         width: 3.5rem;
         display: inline-block;
