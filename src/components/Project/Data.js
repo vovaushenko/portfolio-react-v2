@@ -30,8 +30,7 @@ export const projectTwo = {
   header: 'LinkedIn Clone',
   subHeader: 'Solo Project',
   description: `The LinkedIn-clone web application presents a custom LinkedIn-clone.
-  The APP is created with the latest industry standards using React.js and Redux Toolkit
-  Firebase is used for the backend
+  The APP is created with the latest industry standards using React.js and Redux Toolkit.
   `,
   img: project2,
   alt: 'LinkedIn Clone',
@@ -69,7 +68,7 @@ export const projectFour = {
 
   header: 'Google Search Clone',
   subHeader: 'Solo Project',
-  description: `A Google Search Clone that is built using React, Firebase and Google search api.`,
+  description: `A Google Search Clone that is built using React, Firebase and the Google search API.`,
   img: project4,
   alt: 'Google Search',
   gitUrl: 'https://github.com/vovaushenko/google-search-clone',

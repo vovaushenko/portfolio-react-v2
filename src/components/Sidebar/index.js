@@ -6,6 +6,7 @@ import {
   SidebarLink,
   SidebarMenu,
   SidebarWrapper,
+  SidebarRouterLink,
 } from './SidebarElements';
 
 const Sidebar = () => {
@@ -31,6 +32,9 @@ const Sidebar = () => {
           <SidebarLink to="footer" onClick={toggle}>
             Contact
           </SidebarLink>
+          <SidebarRouterLink to="/resume" onClick={toggle}>
+            Resume
+          </SidebarRouterLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

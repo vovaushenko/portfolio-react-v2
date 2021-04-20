@@ -43,13 +43,13 @@ const ResumeInterests = () => {
         <p>
           <span>📚</span>I am an avid reader. Reading has always been one of my
           biggest passions. Paradoxically enough, I cannot single out one
-          concerete genre or book. I just read to satisfy my genuine
-          intellectual curiosity.
+          concrete genre or book. I just read to satisfy my genuine intellectual
+          curiosity.
         </p>
 
         <p>
           <span>💻</span>I early discovered the joy and pleasure of "dirtying"
-          my hands with computers and programming. I even took part in olympiads
+          my hands with computers and programming. I even took part in Olympiads
           and coding challenges. Competitive coding in particular helped me a
           lot, offering me highly diversified algorithm-based problems,
           motivation and the chance to learn best practices from veteran coders.
@@ -57,12 +57,12 @@ const ResumeInterests = () => {
         <p>
           <span>👨‍🔬</span>Science. Eager to learn something new every waking day,
           I have always thought that science is the absolutely best way to test
-          and exercise your problem-solving muscle. As a result of this, I
+          and exercise your problem-solving muscle. As a result of this, I have
           participated in various biomedical projects throughout the world -
-          from Finland to the US. Some of my projects were published and
+          from Finland to the U.S. Some of my projects were published and
           presented in the most reputable scientific journals and conferences. I
-          am an Author and co-author of over 70 publications in peer-reviewed
-          scientific journals, proceedings of international conferences
+          am an author and co-author of over 70 publications in peer-reviewed
+          scientific journals and proceedings of international conferences.
         </p>
       </StyledTextWrapper>
     </ReusableContainer>

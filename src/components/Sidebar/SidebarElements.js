@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 import { FaTimes } from 'react-icons/fa';
 
@@ -64,7 +65,7 @@ export const SidebarMenu = styled.div`
 
 // **************Sidebar Link****************
 
-export const SidebarLink = styled(LinkScroll)`
+const linkStyling = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +84,14 @@ export const SidebarLink = styled(LinkScroll)`
     color: #01bf71;
     transition: 0.2s ease-in-out;
   }
+`;
+
+export const SidebarLink = styled(LinkScroll)`
+  ${linkStyling}
+`;
+
+export const SidebarRouterLink = styled(Link)`
+  ${linkStyling}
 `;
 
 // **************Sidebar Button Wrapper****************

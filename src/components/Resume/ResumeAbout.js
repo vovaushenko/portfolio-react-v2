@@ -96,16 +96,16 @@ const ResumeAbout = () => {
           the web platform.
           <br />
           <br />
-          I Have a strong passion to build elegant, performant and friendly user
-          experiences. For the last 2 years mostly worked with React stack and
-          building products from the ground up, including collecting business
-          requirements, composing full-featured UX designs and architecting
-          frontends.
+          I have a strong passion to build elegant, performant and user-friendly
+          experiences. For the last 2 years I mostly worked with the React stack
+          and building products from the ground up, including collecting
+          business requirements, composing full-featured UX designs and
+          architecting frontends.
           <br />
-          <br />A teacher at heart, I had been fortunate enough to pass what
-          little I know with many people, thanks to my professional and
-          volunteer activity. I have experience teaching software engineering at
-          a University and being a mentor.
+          <br />A teacher at heart, I have been fortunate enough to pass what
+          little I know to many people, thanks to my professional and volunteer
+          activity. I have experience teaching software engineering at a
+          University and being a mentor.
         </p>
       </div>
       <SocialLinks />
