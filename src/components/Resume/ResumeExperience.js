@@ -3,6 +3,8 @@ import { useGlobalContext } from '../../context/context';
 import { useOnScreen } from '../../hooks/useOnScreen';
 import ReusableContainer from './ReusableContainer';
 import ReusableSectionHeader from './ReusableSectionHeader';
+import { experience } from './professionalExperienceData';
+import ReusableInformation from './ReusableInformation';
 
 const ResumeExperience = () => {
   const [setRef, visible] = useOnScreen({ threshold: 0.8 });
@@ -18,7 +20,11 @@ const ResumeExperience = () => {
   return (
     <ReusableContainer id="experience">
       <ReusableSectionHeader>Experience</ReusableSectionHeader>
-      <div ref={setRef}></div>
+      <div ref={setRef}>
+        {experience.map((degree) => (
+          <ReusableInformation key={degree.id} {...degree} />
+        ))}
+      </div>
     </ReusableContainer>
   );
 };

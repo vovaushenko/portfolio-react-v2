@@ -7,6 +7,9 @@ const StyledWrapper = styled.article`
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 3rem;
+  h3 {
+    letter-spacing: 1.5px;
+  }
 
   @media ${({ theme }) => theme.media.tablet} {
     h3 {
