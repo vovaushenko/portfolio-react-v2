@@ -3,6 +3,7 @@ import project2 from '../../images/projects/linkedin-clone.png';
 import project3 from '../../images/projects/rntls.png';
 import project4 from '../../images/projects/Google-search-clone.png';
 import project5 from '../../images/projects/Portfolio.png';
+import project6 from '../../images/projects/Retrofit-shop.png';
 
 export const projectOne = {
   id: '',
@@ -93,6 +94,24 @@ export const projectFive = {
   liveUrl: 'https://vovaushenko.dev/',
 
   isVisibleReact: true,
+  isVisibleCss: true,
+  isVisibleRedux: true,
+};
+export const projectSix = {
+  id: '',
+  reverse: true,
+  lightmode: false,
+
+  header: 'Retrofit Online Commerce Platform',
+  subHeader: 'Solo Project',
+  description: `Retrofit is a custom eCommerce platform built with React, Context API, Node, Auth0 & Netlify Serverless Functions. This online furniture store has authentication, stripe payment and advanced filtering.`,
+  img: project6,
+  alt: 'Retrofit Web App',
+  gitUrl: 'https://github.com/vovaushenko/furniture-comerce-app-react',
+  liveUrl: 'https://retrofit-furniture.netlify.app/',
+
+  isVisibleReact: true,
+  isVisibleNode: true,
   isVisibleCss: true,
   isVisibleRedux: true,
 };

@@ -35,7 +35,7 @@ const HeroSection = () => {
           muted
           src={theme === 'dark' ? DarkBg : LightBg}
           type="video/mp4"
-          alt="Vide Background"
+          alt="Video Background"
         />
       </HeroBg>
       <HeroContent>

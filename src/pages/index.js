@@ -8,6 +8,7 @@ import {
   projectFive,
   projectFour,
   projectOne,
+  projectSix,
   projectThree,
   projectTwo,
 } from '../components/Project/Data';
@@ -46,6 +47,7 @@ const Home = () => {
       <Project {...projectThree} />
       <Project {...projectFour} />
       <Project {...projectTwo} />
+      <Project {...projectSix} />
       <ContactForm />
       <Footer />
     </>

@@ -10,6 +10,7 @@ import friendship from '../../images/friend.png';
 import leetcode from '../../images/1280px-LeetCode_Logo_black_with_text.svg.png';
 import { useGlobalContext } from '../../context/context';
 import ReusableButton from '../ReusableButton/ReusableButton';
+import { useHistory } from 'react-router';
 
 const AboutContainer = styled.section`
   display: flex;
@@ -115,6 +116,11 @@ const LeetCodeImg = styled.img`
 
 const About = () => {
   const { theme } = useGlobalContext();
+  let history = useHistory();
+
+  const visitResumePage = () => {
+    history.push('/resume');
+  };
   return (
     <AboutContainer id="skills">
       <Avatar
@@ -140,7 +146,11 @@ const About = () => {
           beautifully-simple, intuitive and clean interfaces.
         </AboutText>
         <div>
-          <ReusableButton type="button" text="Interactive Resume" />
+          <ReusableButton
+            type="button"
+            text="Interactive Resume"
+            func={visitResumePage}
+          />
         </div>
         <FavoriteText>
           My favourite things are: coding, weightlifting, being nice to people
