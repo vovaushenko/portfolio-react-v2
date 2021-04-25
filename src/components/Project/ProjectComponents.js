@@ -147,10 +147,9 @@ export const ProjectGitHubLink = styled.a`
   text-decoration: none;
   margin: 0 1rem;
   padding: 0.5em 1em;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s linear;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
     color: #fff;
     background-color: ${({ theme }) => theme.mainColor};
     .icon {

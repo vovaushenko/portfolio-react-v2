@@ -8,6 +8,7 @@ import {
   projectFive,
   projectFour,
   projectOne,
+  projectSeven,
   projectSix,
   projectThree,
   projectTwo,
@@ -43,11 +44,11 @@ const Home = () => {
       <Tech />
       <ProjectHeader />
       <Project {...projectOne} />
-      <Project {...projectFive} />
+      <Project {...projectSeven} />
+      <Project {...projectSix} />
       <Project {...projectThree} />
       <Project {...projectFour} />
       <Project {...projectTwo} />
-      <Project {...projectSix} />
       <ContactForm />
       <Footer />
     </>

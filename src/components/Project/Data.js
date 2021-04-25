@@ -4,6 +4,7 @@ import project3 from '../../images/projects/rntls.png';
 import project4 from '../../images/projects/Google-search-clone.png';
 import project5 from '../../images/projects/Portfolio.png';
 import project6 from '../../images/projects/Retrofit-shop.png';
+import project7 from '../../images/Showcase-app.png';
 
 export const projectOne = {
   id: '',
@@ -25,7 +26,7 @@ export const projectOne = {
 };
 export const projectTwo = {
   id: '',
-  reverse: false,
+  reverse: true,
   lightmode: false,
 
   header: 'LinkedIn Clone',
@@ -45,7 +46,7 @@ export const projectTwo = {
 };
 export const projectThree = {
   id: '',
-  reverse: false,
+  reverse: true,
   lightmode: false,
 
   header: 'RNTL Real Estate',
@@ -64,7 +65,7 @@ export const projectThree = {
 };
 export const projectFour = {
   id: '',
-  reverse: true,
+  reverse: false,
   lightmode: false,
 
   header: 'Google Search Clone',
@@ -99,7 +100,7 @@ export const projectFive = {
 };
 export const projectSix = {
   id: '',
-  reverse: true,
+  reverse: false,
   lightmode: false,
 
   header: 'Retrofit Online Commerce Platform',
@@ -114,4 +115,21 @@ export const projectSix = {
   isVisibleNode: true,
   isVisibleCss: true,
   isVisibleRedux: true,
+};
+export const projectSeven = {
+  id: '',
+  reverse: true,
+  lightmode: false,
+
+  header: 'Web Dev Projects && Experiments',
+  subHeader: 'Solo Project',
+  description: `A collection of projects, challenges && creative experiments that I designed and coded. I believe that by solving real-world web-dev challenges, we can test our real skills.`,
+  img: project7,
+  alt: '',
+  gitUrl: 'https://github.com/vovaushenko/showcase-projects-app',
+  liveUrl: 'https://frontend-projects-by-vova.netlify.app/',
+
+  isVisibleReact: true,
+  isVisibleNode: true,
+  isVisibleStyledComponents: true,
 };
