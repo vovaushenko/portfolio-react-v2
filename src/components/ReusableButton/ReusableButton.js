@@ -14,9 +14,9 @@ const StyledButton = styled.button`
   box-sizing: border-box;
   margin-top: 1rem;
   outline: none;
+  transition: all 0.3s linear;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
     color: #fff;
     background-color: ${({ theme }) => theme.mainColor};
   }

@@ -19,24 +19,18 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.2s ease-in-out;
  }
 
- h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin-bottom:1rem;
-  @media screen and (max-width: 500px) {
-    margin-bottom:0.5rem;
-  }
- 
+  letter-spacing: 1.1px;
 }
 p {
   margin-bottom: 1rem;
   letter-spacing: 1.1px;
-  @media screen and (max-width: 500px) {
-    margin-bottom:0.5rem;
-  }
 }
 
 ul {
@@ -65,5 +59,4 @@ img {
   background:${({ theme }) => theme.mainColor};;
   border-radius:25px;
 }
-
  `;

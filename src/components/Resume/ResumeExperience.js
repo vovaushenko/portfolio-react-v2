@@ -7,7 +7,7 @@ import { experience } from './professionalExperienceData';
 import ReusableInformation from './ReusableInformation';
 
 const ResumeExperience = () => {
-  const [setRef, visible] = useOnScreen({ threshold: 0.8 });
+  const [setRef, visible] = useOnScreen({ threshold: 0.6 });
 
   const { setCurrentlyInViewport } = useGlobalContext();
 

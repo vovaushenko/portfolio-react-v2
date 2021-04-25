@@ -86,8 +86,8 @@ const sharedCss = css`
   letter-spacing: 1.1px;
 
   &:active {
-    border-bottom: 3px solid #01bf71;
-    color: #01bf71;
+    border-bottom: 3px solid ${({ theme }) => theme.mainColor};
+    color: ${({ theme }) => theme.mainColor};
   }
 
   &:hover {

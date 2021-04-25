@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { JellyfishSpinner } from 'react-spinners-kit';
+import { useGlobalContext } from '../../context/context';
 
 const LoadingContainer = styled.div`
   position: fixed;
@@ -15,14 +16,17 @@ const LoadingContainer = styled.div`
   background: #010606;
 `;
 
-const index = () => {
+const LoadingPage = () => {
+  const { theme } = useGlobalContext();
+  const color = theme === 'dark' ? '#01bf71' : '#715CDA';
+  console.log(theme);
   return (
     <>
       <LoadingContainer>
-        <JellyfishSpinner size={150} color="#01bf71" />
+        <JellyfishSpinner size={150} color={color} />
       </LoadingContainer>
     </>
   );
 };
 
-export default index;
+export default LoadingPage;

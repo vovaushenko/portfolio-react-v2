@@ -19,6 +19,7 @@ const AboutContainer = styled.section`
   flex-direction: column;
   width: 90%;
   margin: 1rem auto;
+  text-align: center;
 `;
 
 const Avatar = styled.img`
@@ -39,8 +40,6 @@ const AboutHeader = styled.h1`
 `;
 
 const AboutText = styled.p`
-  text-align: center;
-  letter-spacing: 1.1px;
   line-height: 1.5;
 
   @media screen and (max-width: 768px) {
@@ -50,16 +49,14 @@ const AboutText = styled.p`
 `;
 
 const FavoriteText = styled.p`
-  text-align: center;
-  letter-spacing: 1.1px;
+  line-height: 1.5;
+  color: ${({ theme }) => theme.mainColor};
   font-size: 1rem;
   margin-top: 2rem;
-  ${({ theme }) => theme.gradient};
 
   @media screen and (max-width: 768px) {
     font-size: 0.75rem;
     text-align: justify;
-    word-break: break-all;
   }
 `;
 
