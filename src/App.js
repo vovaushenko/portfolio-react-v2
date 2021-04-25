@@ -5,6 +5,7 @@ import Home from './pages';
 import SigninPage from './pages/signin';
 import ResumePage from './pages/resume';
 import { useGlobalContext } from './context/context';
+import ErrorPage from './pages/error';
 
 function App() {
   const { themeMode } = useGlobalContext();
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/contact" component={SigninPage} exact />
             <Route path="/resume" component={ResumePage} exact />
+            <Route path="*">
+              <ErrorPage />
+            </Route>
           </Switch>
         </Router>
       </ThemeProvider>
