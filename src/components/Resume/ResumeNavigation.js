@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
-import avatar from '../../images/Photo.jpg';
 import ResumeAvatar from './ResumeAvatar';
 import ThemeToggler from '../ThemeToggler/ThemeToggler';
 import ReusableButton from '../ReusableButton/ReusableButton';
 import { useGlobalContext } from '../../context/context';
 import { useHistory } from 'react-router';
+
+import avatar from '../../images/Photo.jpg';
+import cv from '../../assets/cv-vova-ushenko.pdf';
 
 const StyledNavigation = styled.nav`
   display: flex;
@@ -44,7 +46,7 @@ const StyledNavigation = styled.nav`
   }
 `;
 
-export const NavLinks = styled(LinkScroll)`
+const sharedLinkStyles = css`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -67,6 +69,14 @@ export const NavLinks = styled(LinkScroll)`
     color: ${({ theme, inviewport }) =>
       inviewport === 'yes' ? '#fff' : theme.mainColor};
   }
+`;
+
+const NavLinks = styled(LinkScroll)`
+  ${sharedLinkStyles}
+`;
+
+const ResumeLink = styled.a`
+  ${sharedLinkStyles}
 `;
 
 const ResumeNavigation = () => {
@@ -155,6 +165,9 @@ const ResumeNavigation = () => {
             >
               awards
             </NavLinks>
+          </li>
+          <li>
+            <ResumeLink href={cv}>Download CV</ResumeLink>
           </li>
         </ul>
       </div>
