@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const Button = styled(Link)`
-  padding: 0.5em 1em;
   color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+  padding: 0 2rem;
   font-size: 1.5rem;
+  height: 3rem;
   outline: none;
   cursor: pointer;
   display: flex;
@@ -63,10 +64,10 @@ export const Button = styled(Link)`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
     left: 0;
     top: 0;
     border-radius: 2rem;
+    border: 2px solid ${({ theme }) => theme.mainColor};
   }
 
   @keyframes glowing {
@@ -81,7 +82,7 @@ export const Button = styled(Link)`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
+  @media ${({ theme }) => theme.media.phone} {
+    font-size: 1.5rem;
   }
 `;

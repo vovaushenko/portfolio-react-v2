@@ -40,11 +40,10 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  border: 2px solid ${({ theme }) => theme.mainColor};
   background: ${({ theme }) => theme.heroBg};
   border-radius: 20px;
   backdrop-filter: blur(4px);
-  border: solid 0px transparent;
   background-clip: padding-box;
   box-shadow: 1px 1px 1px 1px ${({ theme }) => theme.heroBg};
   z-index: 1;
@@ -59,6 +58,30 @@ export const HeroH1 = styled.h1`
   letter-spacing: 1.5px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+
+  span {
+    display: inline-block;
+    animation-name: shake;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    30% {
+      transform: rotate(20deg);
+    }
+    68%,
+    72% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;

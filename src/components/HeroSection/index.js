@@ -15,7 +15,7 @@ import {
 
 import DarkBg from '../../video/video-bg.mp4';
 import LightBg from '../../video/lightBackground.mp4';
-import { Button } from '../ButtonElement';
+import { Button } from '../GlowingButton/ButtonElement';
 import flag from '../../images/flag.png';
 import { useGlobalContext } from '../../context/context';
 
@@ -39,7 +39,9 @@ const HeroSection = () => {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Hi there! 👋</HeroH1>
+        <HeroH1>
+          Hi there! <span className="shake">👋</span>
+        </HeroH1>
         <HeroP>
           Glad to meet you! I'm Vova, an interactive web-developer currently
           based in Ottawa
