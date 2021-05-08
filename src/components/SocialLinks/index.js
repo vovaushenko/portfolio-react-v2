@@ -49,7 +49,7 @@ const SocialLinks = () => {
         <SiCodewars />
       </SocialIconLink>
       <SocialIconLink
-        href="https://www.linkedin.com/in/volodymyr-ushenko-5087a87b/"
+        href="https://www.linkedin.com/in/vovau/"
         target="_blank"
         rel="noreferrer"
         aria-label="LinkedIn"
@@ -57,7 +57,7 @@ const SocialLinks = () => {
         <FaLinkedin />
       </SocialIconLink>
       <SocialIconLink
-        href="//www.twitter.com/Vova79605562"
+        href="https://twitter.com/vova_ush"
         target="_blank"
         rel="noreferrer"
         aria-label="Twitter"

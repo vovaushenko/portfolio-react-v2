@@ -4,7 +4,7 @@ export const experience = [
     header: 'Developer/Designer',
     subHeader: `Chernivtsi National University, Ukraine`,
     date: '2017-2021',
-    details: `Learning and expanding my skills in web development, I have made several projects and websites for the University. I was responsible for the presence of our department on the Web. I was working on internal web applications, specializing in design and front-end development with React. My most noticeable project was a full-stack testing application that I created using React.js, Node.js, and MongoDB for internal testing assesments.`,
+    details: `Learning and expanding my skills in web development, I have done several projects and designed websites for the University. I was responsible for the Web presence of our department. I was working on internal web applications, specializing in design and front-end development with React. My most noticeable project was a full-stack testing application that I created using React.js, Node.js, and MongoDB for internal testing assesments.`,
   },
 
   {

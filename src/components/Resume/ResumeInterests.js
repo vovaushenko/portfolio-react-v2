@@ -15,6 +15,15 @@ const StyledTextWrapper = styled.div`
       font-size: 1.5rem;
     }
   }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 const ResumeInterests = () => {
@@ -48,11 +57,12 @@ const ResumeInterests = () => {
         </p>
 
         <p>
-          <span>💻</span>I early discovered the joy and pleasure of "dirtying"
-          my hands with computers and programming. I even took part in Olympiads
-          and coding challenges. Competitive coding in particular helped me a
-          lot, offering me highly diversified algorithm-based problems,
-          motivation and the chance to learn best practices from veteran coders.
+          <span>💻</span>I discovered early on the joy and pleasure of
+          "dirtying" my hands with computers and programming. I even took part
+          in Olympiads and coding challenges. Competitive coding in particular
+          helped me a lot, offering me highly diversified algorithm-based
+          problems, motivation and the chance to learn best practices from
+          veteran coders.
         </p>
         <p>
           <span>👨‍🔬</span>Science. Eager to learn something new every waking day,

@@ -26,7 +26,8 @@ const StyledWrapper = styled.section`
       text-decoration: none;
       justify-content: space-between;
       margin-bottom: 1rem;
-      margin-left: 2rem;
+      margin-left: 1rem;
+
       color: ${({ theme }) => theme.text};
       height: 90px;
 
@@ -39,6 +40,14 @@ const StyledWrapper = styled.section`
         display: inline-block;
         margin-left: 1rem;
       }
+    }
+  }
+  @media ${({ theme }) => theme.media.tablet} {
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.75rem;
     }
   }
 `;
@@ -54,18 +63,11 @@ const ResumeAwards = () => {
   });
   return (
     <ReusableContainer id="awards">
-      <ReusableSectionHeader>Awards & Certifications</ReusableSectionHeader>
+      <ReusableSectionHeader>
+        Awards & Certifications & Publications
+      </ReusableSectionHeader>
 
       <StyledWrapper ref={setRef}>
-        <h3>
-          Passionate web-developer with a background in Biomedical Engineering.
-          Author and co-author of over 70 publications in peer-reviewed
-          scientific journals, proceedings of international conferences, 10
-          patents. Over 20 presentations at the major international conferences
-          and symposia (h – index: 17 based on the Google Scholar and 17 in the
-          Web of Science).
-        </h3>
-
         <div className="link-wrapper">
           <a
             href="https://scholar.google.com.ua/citations?user=Wu7U4yoAAAAJ&hl=en"

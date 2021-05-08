@@ -64,6 +64,23 @@ const StyledAbout = styled.section`
         margin: 0;
       }
     }
+
+    @media ${({ theme }) => theme.media.phone} {
+      h1 {
+        font-size: 2rem;
+        color: red;
+      }
+      h3 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      a {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
   }
 `;
 
@@ -91,9 +108,9 @@ const ResumeAbout = () => {
           team grow.
           <br />
           <br />
-          I've created full-stack projects with React & Node.js. Have excellent
-          knowledge of modern JS stack for building complex user interfaces for
-          the web platform.
+          I've created full-stack projects with React & Node.js. I Have
+          excellent knowledge of modern JS stack for building complex user
+          interfaces for the web platform.
           <br />
           <br />
           I have a strong passion to build elegant, performant and user-friendly

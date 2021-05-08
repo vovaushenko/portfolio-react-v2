@@ -70,6 +70,14 @@ const StyledSkillPair = styled.div`
       font-size: 0.75rem;
     }
   }
+  @media ${({ theme }) => theme.media.phone} {
+    h4 {
+      font-size: 0.75rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+  }
 `;
 
 const ResumeSkills = () => {

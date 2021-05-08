@@ -19,6 +19,15 @@ const StyledWrapper = styled.article`
       font-size: 1rem;
     }
   }
+
+  @media ${({ theme }) => theme.media.phone} {
+    h3 {
+      font-size: 0.75rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 const ReusableInformation = ({ header, subHeader, date, details }) => {
