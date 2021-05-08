@@ -5,6 +5,7 @@ import project4 from '../../images/projects/Google-search-clone.png';
 import project5 from '../../images/projects/Portfolio.png';
 import project6 from '../../images/projects/Retrofit-shop.png';
 import project7 from '../../images/Showcase-app.png';
+import project8 from '../../images/projects/CocktailDB.png';
 
 export const projectOne = {
   id: '',
@@ -46,7 +47,7 @@ export const projectTwo = {
 };
 export const projectThree = {
   id: '',
-  reverse: true,
+  reverse: false,
   lightmode: false,
 
   header: 'RNTL Real Estate',
@@ -65,7 +66,7 @@ export const projectThree = {
 };
 export const projectFour = {
   id: '',
-  reverse: false,
+  reverse: true,
   lightmode: false,
 
   header: 'Google Search Clone',
@@ -123,13 +124,36 @@ export const projectSeven = {
 
   header: 'Web Dev Projects && Experiments',
   subHeader: 'Solo Project',
-  description: `A collection of projects, challenges && creative experiments that I designed and coded. I believe that by solving real-world web-dev challenges, we can test our real skills.`,
+  description: `A collection of projects, challenges and creative experiments that I designed, coded and deployed.`,
   img: project7,
   alt: '',
   gitUrl: 'https://github.com/vovaushenko/showcase-projects-app',
   liveUrl: 'https://frontend-projects-by-vova.netlify.app/',
-
+  isVisibleTS: true,
   isVisibleReact: true,
   isVisibleNode: true,
+  isVisibleStyledComponents: true,
+  isVisibleCss: true,
+  isVisibleRedux: true,
+  isVisibleMongo: true,
+};
+
+export const projectEight = {
+  id: '',
+  reverse: true,
+  lightmode: false,
+
+  header: 'Cocktail DB',
+  subHeader: 'Solo Project',
+  description: `A modern-looking cocktail application written with React/Redux and enhanced with Typescript. The app features: Async Requests, Custom Redux Middleware, Action Cancellation, Client-Side Storage, Dark/Light mode.
+  `,
+  img: project8,
+  alt: '',
+  gitUrl: 'https://github.com/vovaushenko/cocktail-app-typescript-redux-react',
+  liveUrl: 'https://cocktail-finder-tsredux.netlify.app/',
+
+  isVisibleReact: true,
+  isVisibleTS: true,
+  isVisibleRedux: true,
   isVisibleStyledComponents: true,
 };

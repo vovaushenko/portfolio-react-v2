@@ -8,6 +8,7 @@ import {
   SiMongodb,
   SiStyledComponents,
   SiGoogle,
+  SiTypescript,
 } from 'react-icons/si';
 import { FiMonitor } from 'react-icons/fi';
 // *************** Project Wrap ******************
@@ -197,6 +198,12 @@ export const ReduxIcon = styled(SiRedux)`
   color: ${({ theme }) => theme.mainColor};
 `;
 export const MongoIcon = styled(SiMongodb)`
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  margin-left: 8px;
+  font-size: 25px;
+  color: ${({ theme }) => theme.mainColor};
+`;
+export const TSicon = styled(SiTypescript)`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   margin-left: 8px;
   font-size: 25px;

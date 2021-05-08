@@ -18,7 +18,6 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
-
             <Route path="/resume" component={ResumePage} exact />
             <Route path="*">
               <ErrorPage />

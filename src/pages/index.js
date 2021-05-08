@@ -12,6 +12,7 @@ import {
   projectSix,
   projectThree,
   projectTwo,
+  projectEight,
 } from '../components/Project/Data';
 import Tech from '../components/Technologies';
 import Project from '../components/Project';
@@ -46,9 +47,9 @@ const Home = () => {
       <Project {...projectOne} />
       <Project {...projectSeven} />
       <Project {...projectSix} />
+      <Project {...projectEight} />
       <Project {...projectThree} />
       <Project {...projectFour} />
-      <Project {...projectTwo} />
       <ContactForm />
       <Footer />
     </>

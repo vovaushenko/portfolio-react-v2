@@ -7,6 +7,7 @@ import {
   JsIcon,
   NodeIcon,
   MongoIcon,
+  TSicon,
   ReduxIcon,
   StyledComponentsIcon,
   GoogleIcon,
@@ -42,6 +43,7 @@ const Project = ({
   isVisibleRedux,
   isVisibleGoogle,
   isVisibleMongo,
+  isVisibleTS,
   isVisibleStyledComponents,
   gitUrl,
   liveUrl,
@@ -77,6 +79,7 @@ const Project = ({
               <NodeIcon visible={+isVisibleNode} lightmode={+lightmode} />
               <ReduxIcon visible={+isVisibleRedux} lightmode={+lightmode} />
               <MongoIcon visible={+isVisibleMongo} lightmode={+lightmode} />
+              <TSicon visible={+isVisibleTS} lightmode={+lightmode} />
               <GoogleIcon visible={+isVisibleGoogle} lightmode={+lightmode} />
               <StyledComponentsIcon
                 visible={+isVisibleStyledComponents}
@@ -125,6 +128,7 @@ Project.defaultProps = {
   isVisibleMongo: +false,
   isVisibleStyledComponents: +false,
   isVisibleGoogle: +false,
+  isVisibleTS: +false,
 };
 
 export default Project;
